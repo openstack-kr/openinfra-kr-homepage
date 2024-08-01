@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on OpenInfra Korea User Group</title>
+    <link>https://openinfra-kr.org/pages/</link>
+    <description>Recent content in Pages on OpenInfra Korea User Group</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://openinfra-kr.org/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://openinfra-kr.org/privacy/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://openinfra-kr.org/privacy/</guid>
+      <description>Privacy Policy Last updated: April 07, 2021
+This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</description>
+    </item>
+    
+    <item>
+      <title>Styleguide</title>
+      <link>https://openinfra-kr.org/styleguide/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://openinfra-kr.org/styleguide/</guid>
+      <description>This is a paragraph — Markdown is a lightweight markup language that allows users to format plain text using a syntax that is easy to read and write. Created by John Gruber and Aaron Swartz, Markdown is widely used for formatting text on the web, such as in readme files, forums, and other online platforms.
+ Headings by default: H1 Default styles for headings H2 Default styles for headings H3 Default styles for headings H4 Default styles for headings H5 Default styles for headings H6 Default styles for headings  Lists Ordered list example:  Lightweight markup language Simple and easy-to-read syntax Commonly used for formatting text on the web Utilizes symbols like asterisks, underscores, and hash symbols Converts to HTML or other rich text formats   Unordered list example:  Fast and efficient static site generator Extensive theme and plugin support for customization Cross-platform compatibility Developed in the Go programming language Ideal for building and deploying static websites   Table Default Table using markdown syntax    Header 1 Header 2 Header 3     Content 1 Content 2 Content 3   Content 4 Content 5 Content 6   Content 7 Content 8 Content 9    Table using table shortcode   Header 1 Header 2 Header 3     Content 1 Content 2 Content 3   Content 4 Content 5 Content 6   Content 7 Content 8 Content 9    Quotes Blockquote  &amp;ldquo;Markdown, a language of simplicity and clarity, where the elegance of plain text meets the power to effortlessly transform ideas into beautifully formatted content with just a few keystrokes.</description>
+    </item>
+    
+    <item>
+      <title>Terms and Conditions</title>
+      <link>https://openinfra-kr.org/terms/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://openinfra-kr.org/terms/</guid>
+      <description>Terms and Conditions Last updated: April 07, 2021
+Please read these terms and conditions carefully before using Our Service.
+Interpretation and Definitions Interpretation The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+Definitions For the purposes of these Terms and Conditions:
+  Affiliate means an entity that controls, is controlled by or is under common control with a party, where &amp;ldquo;control&amp;rdquo; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</description>
+    </item>
+    
+    <item>
+      <title>About Us</title>
+      <link>https://openinfra-kr.org/about/</link>
+      <pubDate>Wed, 28 Nov 2018 15:15:34 +1000</pubDate>
+      
+      <guid>https://openinfra-kr.org/about/</guid>
+      <description>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Ne verba patulosque numen vix libet Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis. Ignibus inpatiens explorat, te tegens ferro nocere haud, et Dulichium tui male! Quo sed fuit flexit et hic die solido, gloria?
+ Cum det dixit Parcarum qui spemque est Exit ex huic Quod consiste agitataque claustraque vicina videt lacertis Loquor videt Ardua non igne caelesti coniugis cognovi diversorum Per nunc pariterque saeva vindicet  Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco vati dabant deus.</description>
+    </item>
+    
+  </channel>
+</rss>
