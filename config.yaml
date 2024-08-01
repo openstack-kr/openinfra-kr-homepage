@@ -43,21 +43,19 @@ params:
     base: '''Source Sans 3'''
     monospace: '''Source Code Pro'''
   logo:
-    logo_text: Advance
+    logo_text: "OpenInfra Korea Group"
     logo_image_desktop: images/logo/logo.svg
     logo_image_mobile: images/logo/logo-mobile.svg
     logo_image_desktop_invert: images/logo/logo-invert.svg
     logo_image_mobile_invert: images/logo/logo-invert-mobile.svg
-    logo_image_desktop_height: 34px
-    logo_image_desktop_width: 34px
-    logo_image_mobile_height: 34px
-    logo_image_mobile_width: 34px
+    logo_image_desktop_height: "85px"
+    logo_image_desktop_width: "132px"
+    logo_image_mobile_height: "21px"
+    logo_image_mobile_width: "34px"
     show_logo_image_on_mobile: true
     show_logo_image_on_desktop: true
     show_logo_text_on_mobile: false
-    show_logo_text_on_desktop: true
-    logo_text_font_size: 24px
-    logo_text_font_weight: "500"
+    show_logo_text_on_desktop: false
   header:
     fixed: true
     header_height: 60px

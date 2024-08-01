@@ -1,8 +1,11 @@
 ---
-title: "Hugo Advance"
+title: "OpenInfra Korea Group"
 date: 2019-02-22
-description: "Advance is a <strong>multi-purpose premium Hugo theme.</strong> Modern design, clean code and highly configurable."
+permalink: "/"
+description: "OpenInfra Korea Group is home of all open infra community including OpenStack."
 header_transparent: true
+meta_title: OpenInfra Korea Group - We Are OpenInfra
+
 hero:
   type: hero
   enabled: true
@@ -15,20 +18,20 @@ hero:
     classes: "my-custom-class another-custom-class"
   align_horizontal: left
   align_vertical: middle
-  height: 600px
+  height: "1080px"
   fullscreen_mobile: true
-  fullscreen_desktop: false
+  fullscreen_desktop: true
   headings:
-    heading: Hugo Advance
-    sub_heading: Advance is a multi-purpose premium Hugo theme. Modern design, clean code and highly configurable.
+    heading: "OpenInfra Korea Group"
+    sub_heading: "OpenInfra Korea Group is home of all open infra community including OpenStack"
     text: ''
     text_color: "#FFFFFF"
     text_color_dark: "#FFFFFF"
   background:
-    background_image: "images/photos/home/home-large.webp"
+    background_image: "/images/photos/home/home-1-large.jpg"
     background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
     background_gradient: true
-    background_color: "" # "#030202"
+    background_color: "#1d2830"
     background_color_dark: "" # "#030202" 
     opacity: 1
   image:
