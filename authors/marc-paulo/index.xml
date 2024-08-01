@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marc Paulo on OpenInfra Korea User Group</title>
-    <link>https://openinfra-kr.org/authors/marc-paulo/</link>
+    <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/marc-paulo/</link>
     <description>Recent content in Marc Paulo on OpenInfra Korea User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 11 Feb 2022 16:49:03 +0000</lastBuildDate><atom:link href="https://openinfra-kr.org/authors/marc-paulo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Feb 2022 16:49:03 +0000</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/authors/marc-paulo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ideas to help your business grow</title>
-      <link>https://openinfra-kr.org/blog/2022/02/ideas-to-help-your-business-grow/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2022/02/ideas-to-help-your-business-grow/</link>
       <pubDate>Fri, 11 Feb 2022 16:49:03 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/blog/2022/02/ideas-to-help-your-business-grow/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2022/02/ideas-to-help-your-business-grow/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>

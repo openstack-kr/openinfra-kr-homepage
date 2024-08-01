@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on OpenInfra Korea User Group</title>
-    <link>https://openinfra-kr.org/about/</link>
+    <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/</link>
     <description>Recent content in About on OpenInfra Korea User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 10 Feb 2018 11:52:18 +0700</lastBuildDate><atom:link href="https://openinfra-kr.org/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Feb 2018 11:52:18 +0700</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Development</title>
-      <link>https://openinfra-kr.org/about/web-development/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-development/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:54 +1000</pubDate>
       
-      <guid>https://openinfra-kr.org/about/web-development/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-development/</guid>
       <description>Creating Modern Websites Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 What is Web Design? User experience is about how a user interacts with, and experiences, a particular product, system or service.</description>
@@ -20,10 +20,10 @@ What is Web Design? User experience is about how a user interacts with, and expe
     
     <item>
       <title>Software Engineering</title>
-      <link>https://openinfra-kr.org/about/software-engineering/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/software-engineering/</link>
       <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/about/software-engineering/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/about/software-engineering/</guid>
       <description>Creating Modern Websites Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 What is Web Design? User experience is about how a user interacts with, and experiences, a particular product, system or service.</description>
@@ -31,10 +31,10 @@ What is Web Design? User experience is about how a user interacts with, and expe
     
     <item>
       <title>SEO</title>
-      <link>https://openinfra-kr.org/about/seo/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/seo/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/about/seo/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/about/seo/</guid>
       <description>Creating Modern Websites Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 What is Web Design? User experience is about how a user interacts with, and experiences, a particular product, system or service.</description>
@@ -42,10 +42,10 @@ What is Web Design? User experience is about how a user interacts with, and expe
     
     <item>
       <title>Branding</title>
-      <link>https://openinfra-kr.org/about/branding/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/branding/</link>
       <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/about/branding/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/about/branding/</guid>
       <description>Creating Modern Websites Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 What is Web Design? User experience is about how a user interacts with, and experiences, a particular product, system or service.</description>
@@ -53,10 +53,10 @@ What is Web Design? User experience is about how a user interacts with, and expe
     
     <item>
       <title>Web Design</title>
-      <link>https://openinfra-kr.org/about/web-design/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-design/</link>
       <pubDate>Wed, 28 Nov 2018 15:15:34 +1000</pubDate>
       
-      <guid>https://openinfra-kr.org/about/web-design/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-design/</guid>
       <description>Creating Modern Websites Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 What is Web Design? User experience is about how a user interacts with, and experiences, a particular product, system or service.</description>
@@ -64,10 +64,10 @@ What is Web Design? User experience is about how a user interacts with, and expe
     
     <item>
       <title>User Experience</title>
-      <link>https://openinfra-kr.org/about/user-experience/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/about/user-experience/</link>
       <pubDate>Wed, 28 Nov 2018 15:15:34 +1000</pubDate>
       
-      <guid>https://openinfra-kr.org/about/user-experience/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/about/user-experience/</guid>
       <description>Creating Modern Websites Web design encompasses many different skills and disciplines in the production and maintenance of websites.
 Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
 What is Web Design? User experience is about how a user interacts with, and experiences, a particular product, system or service.</description>

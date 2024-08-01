@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work on OpenInfra Korea User Group</title>
-    <link>https://openinfra-kr.org/hall-of-fame/</link>
+    <link>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/</link>
     <description>Recent content in Work on OpenInfra Korea User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 10 Feb 2018 11:52:18 +0700</lastBuildDate><atom:link href="https://openinfra-kr.org/hall-of-fame/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Feb 2018 11:52:18 +0700</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI alignment and advancement towards intended goals</title>
-      <link>https://openinfra-kr.org/hall-of-fame/ai-alignment-advances-intended-goals/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/ai-alignment-advances-intended-goals/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/hall-of-fame/ai-alignment-advances-intended-goals/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/ai-alignment-advances-intended-goals/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Cognitive architectures in dimensional space</title>
-      <link>https://openinfra-kr.org/hall-of-fame/cognitive-architectures-dimensional-space/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/cognitive-architectures-dimensional-space/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/hall-of-fame/cognitive-architectures-dimensional-space/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/cognitive-architectures-dimensional-space/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Knowledge &amp; behaviour - principles of ethics in AI</title>
-      <link>https://openinfra-kr.org/hall-of-fame/knowledge-behaviour-ai-ethics/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/knowledge-behaviour-ai-ethics/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/hall-of-fame/knowledge-behaviour-ai-ethics/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/knowledge-behaviour-ai-ethics/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>

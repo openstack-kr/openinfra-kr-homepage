@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on OpenInfra Korea User Group</title>
-    <link>https://openinfra-kr.org/categories/</link>
+    <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/</link>
     <description>Recent content in Categories on OpenInfra Korea User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 13 Feb 2022 09:49:03 +0000</lastBuildDate><atom:link href="https://openinfra-kr.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Feb 2022 09:49:03 +0000</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Development</title>
-      <link>https://openinfra-kr.org/categories/development/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/development/</link>
       <pubDate>Sun, 13 Feb 2022 09:49:03 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/development/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seo</title>
-      <link>https://openinfra-kr.org/categories/seo/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/seo/</link>
       <pubDate>Sun, 13 Feb 2022 09:49:03 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/seo/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/seo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Branding</title>
-      <link>https://openinfra-kr.org/categories/branding/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/branding/</link>
       <pubDate>Fri, 11 Feb 2022 16:49:03 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/branding/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/branding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marketing</title>
-      <link>https://openinfra-kr.org/categories/marketing/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/marketing/</link>
       <pubDate>Fri, 11 Feb 2022 16:49:03 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/marketing/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/marketing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Product</title>
-      <link>https://openinfra-kr.org/categories/product/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/product/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/product/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/product/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web Design</title>
-      <link>https://openinfra-kr.org/categories/web-design/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/web-design/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/web-design/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/web-design/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hosting</title>
-      <link>https://openinfra-kr.org/categories/hosting/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/hosting/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/hosting/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/hosting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://openinfra-kr.org/categories/javascript/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/javascript/</link>
       <pubDate>Sat, 29 Dec 2018 10:26:40 +1000</pubDate>
       
-      <guid>https://openinfra-kr.org/categories/javascript/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/categories/javascript/</guid>
       <description></description>
     </item>
     

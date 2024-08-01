@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact on OpenInfra Korea User Group</title>
-    <link>https://openinfra-kr.org/contact/</link>
+    <link>https://openstack-kr.github.io/openinfra-kr-homepage/contact/</link>
     <description>Recent content in Contact on OpenInfra Korea User Group</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 22 Feb 2018 17:01:34 +0700</lastBuildDate><atom:link href="https://openinfra-kr.org/contact/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Feb 2018 17:01:34 +0700</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/contact/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Success</title>
-      <link>https://openinfra-kr.org/contact/success/</link>
+      <link>https://openstack-kr.github.io/openinfra-kr-homepage/contact/success/</link>
       <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://openinfra-kr.org/contact/success/</guid>
+      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/contact/success/</guid>
       <description></description>
     </item>
     

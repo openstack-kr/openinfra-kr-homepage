@@ -2,64 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://openinfra-kr.org/ko/authors/</loc>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/ko/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openinfra-kr.org/authors/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openinfra-kr.org/ko/authors/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/authors/"
                 />
   </url><url>
-    <loc>https://openinfra-kr.org/ko/categories/</loc>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/ko/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openinfra-kr.org/categories/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openinfra-kr.org/ko/categories/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/categories/"
                 />
   </url><url>
-    <loc>https://openinfra-kr.org/ko/portfolio/</loc>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/ko/portfolio/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openinfra-kr.org/portfolio/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openinfra-kr.org/ko/portfolio/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/portfolio/"
                 />
   </url><url>
-    <loc>https://openinfra-kr.org/ko/tags/</loc>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/ko/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openinfra-kr.org/tags/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openinfra-kr.org/ko/tags/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/tags/"
                 />
   </url><url>
-    <loc>https://openinfra-kr.org/ko/</loc>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/ko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openinfra-kr.org/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openinfra-kr.org/ko/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/"
                 />
   </url>
 </urlset>
