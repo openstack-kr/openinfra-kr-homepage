@@ -9,7 +9,7 @@ header_transparent: true
 menu:
   main:
     weight: 3
-    parent: "services"
+    parent: "about"
     params:
       icon: "images/icons/icons8-bar-chart-100.png"
 

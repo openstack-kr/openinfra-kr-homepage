@@ -1,10 +1,34 @@
 ---
-title: "Optimizing Your Website"
-date: 2018-12-20T09:38:03+10:00
-categories: ["Development", "Web Design"]
-description: "Making sure your website runs fast and loads quickly is a fundamental part of the web design and seo process."
-thumbnail: "images/photos/blog/blog-3-thumbnail.webp"
-image: "images/photos/blog/blog-3-large.webp"
+title: "Knowledge & behaviour - principles of ethics in AI"
+description: "An open source machine learning library written in Python"
+date: 2018-12-20
+weight: 3
+header_transparent: true
+portfolio: ["github"]
+
+thumbnail: "images/photos/projects/project-3-thumbnail.webp"
+
+menu:
+  main:
+    name: "Project 3"
+    weight: 3
+    parent: "hall-of-fame"
+    params:
+      description: "Behaviour principles of ethics in AI"
+
+hero:
+  headings:
+    heading: "AI Alignment and advancement towards intended goals"
+    sub_heading: "The expression of a brand including its name, trademark, and visual appearance."
+  background:
+    background_image: "images/photos/projects/project-3-large.webp"
+
+aside:
+  client_label: Client
+  client_content: Stanford
+  text: "A research paper to explore to explore cognitive architectures. Some cognitive architectures or models are based on a set of generic rules, as, e.g., the Information Processing Language."
+  link_label: Source
+  link_url: "https://www.researchgate.net/topic/Engineering"
 ---
 
 Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
@@ -23,7 +47,8 @@ To this end, its main inspiration is the existing conventions for marking up pla
 
 ```js
 $(window).scroll(function () {
-  var scroll = $(window).scrollTop();
+  // this will work when your window scrolled.
+  var scroll = $(window).scrollTop(); //getting the scrolling height of window
   if (scroll > 100) {
     $(".header").addClass("header-scrolled");
   } else {
@@ -38,7 +63,6 @@ There are several different versions of markdown
 
 ### CommonMark
 
-<strong>You can also render HTML directly from markdown</strong>
 From 2012, a group of people including Jeff Atwood and John MacFarlane launched what Atwood characterized as a standardization effort. A community website now aims to "document various tools and resources available to document authors and developers, as well as implementors of the various markdown implementations".
 
 ### GitHub Flavored Markdown (GFM)

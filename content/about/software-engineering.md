@@ -1,35 +1,29 @@
 ---
-title: "Web Design"
-description: "Design beautiful modern websites using the Jamstack."
-date: 2018-11-28T15:15:34+10:00
-weight: 5
+title: "Software Engineering"
+description: "Building complex web applications and system software."
+date: 2019-10-03
+weight: 2
 
 header_transparent: true
 
-meta: 
-  title: "Web Design Services"
-  description: "We offer the best range of web design services in the area"
-  og_title: "View our web design services"
-  og_image: "images/photos/services/service-12-large.webp"
-  og_description: "Learn about the web design services we offer. It encompasses many different skills and disciplines"
-
 menu:
   main:
-    weight: 5
-    parent: "services"
+    weight: 2
+    parent: "about"
     params:
-      icon: "images/icons/icons8-design-100.png"
+      icon: "images/icons/icons8-merge-git-100.png"
 
-icon: "images/icons/icons8-design-100.png"
-thumbnail: "images/photos/services/web-design-thumbnail.webp"
+fa_icon: ""
+icon: "images/icons/icons8-merge-git-100.png"
+thumbnail: "images/photos/services/software-engineering-thumbnail.webp"
 image: ""
 
 hero:
   headings:
-    heading: "Web Design"
-    sub_heading: "Design beautiful modern websites using the Jamstack."
+    heading: "Software Engineering"
+    sub_heading: "Building complex web applications and system software."
   background:
-    background_image: "images/photos/services/web-design-large.webp"
+    background_image: "images/photos/services/software-engineering-large.webp"
     background_image_blend_mode: "overlay"
     background_gradient: true
 ---
@@ -43,8 +37,6 @@ Often many individuals will work in teams covering different aspects of the desi
 ## What is Web Design?
 
 User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
-
-The Why involves the users’ motivations for adopting a product, whether they relate to a task they wish to perform with it or to values and views which users associate with the ownership and use of the product.
 
 {{< framework/figure src="/images/photos/content/content-1.webp" title="Steve Francia"  caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank">}}
 
@@ -72,4 +64,4 @@ There are two primary jobs involved in creating a website: the web designer and 
 
 ![Design In Figma](/images/photos/content/content-1.webp)
 
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another. Particularly in smaller organizations, one person will need the necessary skills for designing and programming the full web page, while larger organizations may have a web designer responsible for the visual aspect alone.
+Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.

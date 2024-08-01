@@ -1,16 +1,16 @@
 ---
-title: "Work"
-description: "A selection of our open source projects, client portfolio and technical papers"
+title: "About"
+description: "We deliver a complete range of digital services."
 date: 2018-02-10T11:52:18+07:00
 
 header_transparent: true
 
 hero:
   headings:
-    heading: "Our Work"
-    sub_heading: "A selection of our open-source and client projects."
+    heading: "About"
+    sub_heading: "We deliver a complete range of digital services."
   background:
-    background_image: "images/photos/home/projects-large.webp"
+    background_image: "images/photos/home/services-large.webp"
     background_image_blend_mode: "overlay"
     background_gradient: true
 ---

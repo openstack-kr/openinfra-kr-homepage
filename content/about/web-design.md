@@ -1,28 +1,35 @@
 ---
-title: "SEO"
-description: "Improving search engine rankings through techincal on page SEO and content creation."
-date: 2021-07-23
-weight: 3
+title: "Web Design"
+description: "Design beautiful modern websites using the Jamstack."
+date: 2018-11-28T15:15:34+10:00
+weight: 5
 
 header_transparent: true
 
+meta: 
+  title: "Web Design Services"
+  description: "We offer the best range of web design services in the area"
+  og_title: "View our web design services"
+  og_image: "images/photos/services/service-12-large.webp"
+  og_description: "Learn about the web design services we offer. It encompasses many different skills and disciplines"
+
 menu:
   main:
-    weight: 3
-    parent: "services"
+    weight: 5
+    parent: "about"
     params:
-      icon: "images/icons/icons8-bar-chart-100.png"
+      icon: "images/icons/icons8-design-100.png"
 
-icon: "images/icons/icons8-bar-chart-100.png"
-thumbnail: "images/photos/services/analytics-thumbnail.webp"
+icon: "images/icons/icons8-design-100.png"
+thumbnail: "images/photos/services/web-design-thumbnail.webp"
 image: ""
 
 hero:
   headings:
-    heading: "SEO"
-    sub_heading: "Improving search engine rankings through techincal on page SEO and content creation."
+    heading: "Web Design"
+    sub_heading: "Design beautiful modern websites using the Jamstack."
   background:
-    background_image: "images/photos/services/analytics-large.webp"
+    background_image: "images/photos/services/web-design-large.webp"
     background_image_blend_mode: "overlay"
     background_gradient: true
 ---

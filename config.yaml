@@ -96,94 +96,107 @@ params:
     formspree_endpoint: https://formspree.io/f/moqyklqv
     netlify_form_name: contact
   multilingual:
-    enable_language_switcher: false
-    show_language_switcher_in_header: false
+    enable_language_switcher: true
+    show_language_switcher_in_header: true
   menu:
     show_dropdown_items_in_mobile_menu: false
     show_social_media_in_mobile_menu: true
   footer:
     enable_footer: true
-    footer_title: Hugo Advance
-    footer_description: Advance is a multi-purpose premium Hugo theme. Modern design, clean code and highly configurable.
+    footer_title: OpenInfra Korea Group
+    footer_description: OpenInfra Korea Group is home of all open infra community including OpenStack
     enable_social_media_links: true
     enable_languages: true
     enable_copyright: false
     enable_menu_footer_primary: true
     enable_menu_footer_secondary: true
-    enable_menu_footer_tertiary: true
-    footer_primary_menu_title: Product
-    footer_secondary_menu_title: Company
-    footer_tertiary_menu_title: Support
+    enable_menu_footer_tertiary: false
+    footer_primary_menu_title: About
+    footer_secondary_menu_title: Get Involved
+    # footer_tertiary_menu_title: Support
   bottom:
     enabled: true
     enable_bottom_menu: true
-    copyright_text: © 2023 Zerostatic Themes
+    copyright_text: © 2024 OpenInfra Korea Group All Rights Reserved
     show_rss_icon: true
 languages:
   en:
     weight: 0
     languageName: English
-    contentDir: content/en
     menu:
       main:
-        - name: Services
-          identifier: services
-          url: /services/
-          pageRef: services
+        - name: Home
+          identifier: home
+          url: /
           weight: 1
-        - name: Branding
-          parent: services
-          url: /services/branding
-          params:
-            icon: images/icons/icons8-color-palette-100.png
-        - name: Our Work
-          identifier: work
-          url: /work/
-          pageRef: work
-          weight: 2
-        - name: Blog
-          identifier: blog
-          url: /blog/
-          pageRef: posts
-          weight: 3
         - name: About
           identifier: about
-          url: /about/
+          #url: /about/
+          url: /
           pageRef: about
+          weight: 2
+        # - name: Branding
+        #   parent: services
+        #   url: /services/branding
+        #   params:
+        #     icon: images/icons/icons8-color-palette-100.png
+        - name: News
+          identifier: news
+          url: /news/
+          pageRef: news
+          weight: 3
+        - name: Community
+          identifier: community
+          url: /community/
+          pageRef: community
           weight: 4
-        - name: Buy Now
-          url: https://www.zerostatic.io/theme/hugo-advance/
+        - name: Tech
+          identifier: tech
+          url: /tech/
+          pageRef: tech
+          weight: 5
+        - name: Get Involved
+          identifier: get-involved
+          url: /get-involved/
+          pageRef: get-involved
+          weight: 6
+        - name: Hall of Fame
+          identifier: hall-of-fame
+          url: /hall-of-fame/
+          pageRef: hall-of-fame
+          weight: 7
+        - name: Forum
+          url: https://forum.openinfra-kr.org
           weight: 10
           params:
             external: true
             button: true
       footer_primary:
-        - name: Services
-          url: /services/
-          weight: 1
-        - name: Work
-          url: /work/
-          weight: 2
-      footer_secondary:
         - name: Team
           url: /team/
           pageRef: team
           weight: 1
-      footer_tertiary:
-        - name: Buy Now
-          url: https://www.zerostatic.io/theme/hugo-advance/
+        - name: Services
+          url: /services/
+          weight: 2
+        - name: Work
+          url: /work/
+          weight: 3
+        - name: Styleguide
+          url: /styleguide/
+          weight: 4
+          pageRef: styleguide
+      footer_secondary:
+        - name: Contact
+          url: /contact/
           weight: 1
+          pageRef: contact
+        - name: OpenInfra Korea Event
+          url: https://www.openinfradays.kr
+          weight: 2
           params:
             external: true
             button: true
-        - name: Contact
-          url: /contact/
-          weight: 2
-          pageRef: contact
-        - name: Styleguide
-          url: /styleguide/
-          weight: 3
-          pageRef: styleguide
       bottom:
         - name: Terms
           url: /terms/
@@ -191,48 +204,95 @@ languages:
         - name: Privacy
           url: /privacy/
           weight: 2
-  fr:
-    weight: 1
-    languageName: Français
-    contentDir: content/fr
-    title: Hugo Avance
+  ko:
+    weight: 0
+    languageName: 한국어
+    title: 오픈 인프라 한국 사용자 그룹
     params:
       footer:
-        footer_primary_menu_title: Produit
-        footer_secondary_menu_title: Compagnie
-        footer_tertiary_menu_title: Support
+        footer_primary_menu_title: 소개
+        footer_secondary_menu_title: 참여하기
     menu:
       main:
-        - name: Prestations de service
-          identifier: services
-          url: /services/
+        - name: Home
+          identifier: home
+          url: /
           weight: 1
-        - name: Notre Travail
-          identifier: work
-          url: /work/
-          weight: 2
-        - name: Blog
-          identifier: blog
-          url: /blog/
-          weight: 3
-        - name: À Propos
+        - name: About
           identifier: about
-          url: /about/
-          weight: 4
-      footer_primary:
-        - name: Services
-          url: /services/
-          weight: 1
-        - name: Work
-          url: /work/
+          #url: /about/
+          url: /
+          pageRef: about
           weight: 2
-      footer_tertiary:
-        - name: Buy Now
-          url: https://www.zerostatic.io/theme/hugo-advance/
+        # - name: Branding
+        #   parent: services
+        #   url: /services/branding
+        #   params:
+        #     icon: images/icons/icons8-color-palette-100.png
+        - name: News
+          identifier: news
+          url: /news/
+          pageRef: news
+          weight: 3
+        - name: Community
+          identifier: community
+          url: /community/
+          pageRef: community
+          weight: 4
+        - name: Tech
+          identifier: tech
+          url: /tech/
+          pageRef: tech
+          weight: 5
+        - name: Get Involved
+          identifier: get-involved
+          url: /get-involved/
+          pageRef: get-involved
+          weight: 6
+        - name: Hall of Fame
+          identifier: hall-of-fame
+          url: /hall-of-fame/
+          pageRef: hall-of-fame
+          weight: 7
+        - name: Forum
+          url: https://forum.openinfra-kr.org
           weight: 10
           params:
             external: true
             button: true
+      footer_primary:
+        - name: Team
+          url: /team/
+          pageRef: team
+          weight: 1
+        - name: Services
+          url: /services/
+          weight: 2
+        - name: Work
+          url: /work/
+          weight: 3
+        - name: Styleguide
+          url: /styleguide/
+          weight: 4
+          pageRef: styleguide
+      footer_secondary:
+        - name: Contact
+          url: /contact/
+          weight: 1
+          pageRef: contact
+        - name: OpenInfra Korea Event
+          url: https://www.openinfradays.kr
+          weight: 2
+          params:
+            external: true
+            button: true
+      bottom:
+        - name: Terms
+          url: /terms/
+          weight: 1
+        - name: Privacy
+          url: /privacy/
+          weight: 2
 permalinks:
   posts: blog/:year/:month/:title/
   pages: :slug/

@@ -1,29 +1,29 @@
 ---
-title: "Software Engineering"
-description: "Building complex web applications and system software."
-date: 2019-10-03
-weight: 2
+title: "User Experience"
+description: "Understanding the needs of the user and creating product solutions."
+date: 2018-11-28T15:15:34+10:00
+weight: 6
 
 header_transparent: true
 
 menu:
   main:
-    weight: 2
-    parent: "services"
+    name: "UX"
+    weight: 6
+    parent: "about"
     params:
-      icon: "images/icons/icons8-merge-git-100.png"
+      icon: "images/icons/icons8-user-engagement-male-100.png"
 
-fa_icon: ""
-icon: "images/icons/icons8-merge-git-100.png"
-thumbnail: "images/photos/services/software-engineering-thumbnail.webp"
 image: ""
+thumbnail: "images/photos/services/user-experience-thumbnail.webp"
+icon: "images/icons/icons8-user-engagement-male-100.png"
 
 hero:
   headings:
-    heading: "Software Engineering"
-    sub_heading: "Building complex web applications and system software."
+    heading: "User Experience"
+    sub_heading: "Understanding the needs of the user and creating product solutions."
   background:
-    background_image: "images/photos/services/software-engineering-large.webp"
+    background_image: "images/photos/services/user-experience-large.webp"
     background_image_blend_mode: "overlay"
     background_gradient: true
 ---
@@ -37,6 +37,8 @@ Often many individuals will work in teams covering different aspects of the desi
 ## What is Web Design?
 
 User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
+
+The Why involves the users’ motivations for adopting a product, whether they relate to a task they wish to perform with it or to values and views which users associate with the ownership and use of the product.
 
 {{< framework/figure src="/images/photos/content/content-1.webp" title="Steve Francia"  caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank">}}
 
@@ -64,4 +66,4 @@ There are two primary jobs involved in creating a website: the web designer and 
 
 ![Design In Figma](/images/photos/content/content-1.webp)
 
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.
+Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another. Particularly in smaller organizations, one person will need the necessary skills for designing and programming the full web page, while larger organizations may have a web designer responsible for the visual aspect alone.

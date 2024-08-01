@@ -1,29 +1,28 @@
 ---
-title: "Software Engineering"
-description: "Building complex web applications and system software."
-date: 2019-10-03
-weight: 2
+title: "Web Development"
+description: "Our experienced software engineers develop websites and desktop applications"
+date: 2018-11-28T15:14:54+10:00
+weight: 1
 
 header_transparent: true
 
 menu:
   main:
-    weight: 2
-    parent: "services"
+    weight: 1
+    parent: "about"
     params:
-      icon: "images/icons/icons8-merge-git-100.png"
+      icon: "images/icons/icons8-source-code-100.png"
 
-fa_icon: ""
-icon: "images/icons/icons8-merge-git-100.png"
-thumbnail: "images/photos/services/software-engineering-thumbnail.webp"
+icon: "images/icons/icons8-source-code-100.png"
+thumbnail: "images/photos/services/web-development-thumbnail.webp"
 image: ""
 
 hero:
   headings:
-    heading: "Software Engineering"
-    sub_heading: "Building complex web applications and system software."
+    heading: "Web Development"
+    sub_heading: "Our experienced software engineers develop websites and desktop applications"
   background:
-    background_image: "images/photos/services/software-engineering-large.webp"
+    background_image: "images/photos/services/web-development-large.webp"
     background_image_blend_mode: "overlay"
     background_gradient: true
 ---
@@ -38,7 +37,7 @@ Often many individuals will work in teams covering different aspects of the desi
 
 User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
 
-{{< framework/figure src="/images/photos/content/content-1.webp" title="Steve Francia"  caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank">}}
+{{< framework/figure src="/images/photos/content/content-1.webp" title="Steve Francia" caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank">}}
 
 ## Front-end Development
 
