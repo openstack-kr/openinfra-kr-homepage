@@ -1,0 +1,30 @@
+{{ $title:= .title }}
+{{ $description:= .description }}
+{{ $image:= .image }}
+{{ $badge:= .badge }}
+
+<div class="heading">
+  {{ with $badge }}  
+    <div class="heading-badge">
+      <span>{{ . }}</span>
+    </div>
+  {{ end }}
+  
+  {{ with $title }}
+    <div class="heading-heading">
+      <h1>{{ . | safeHTML }}</h1>
+    </div>
+  {{ end }}
+
+  {{ with $description }}
+    <div class="heading-description">
+      <p>{{ . }}</p>
+    </div>
+  {{ end }}
+
+  {{ if $image }}
+    <div class="heading-image">
+      <img alt="{{ $title }}" src="{{ $image | relURL }}"/>
+    </div>
+  {{ end }}
+</div>

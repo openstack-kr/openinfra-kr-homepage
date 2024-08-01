@@ -1,0 +1,23 @@
+{{ $name:= .name }}
+
+<div class="author">
+  {{ with .image }}
+    <div class="author-image">
+      <img src="{{ . | relURL }}" alt="{{ $name }}" />
+    </div>
+  {{ end }}
+
+  {{ if or $name .date }}  
+    <div class="author-content">
+      {{ with $name }}
+        <div class="author-name">{{ . }}</div>
+      {{ end }}
+      {{ with .date }}
+        <div class="author-date">{{ .Format "2 Jan 2006" }}</div>
+      {{ end }}
+      {{ with .job }}
+        <div class="author-job">{{ . }}</div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

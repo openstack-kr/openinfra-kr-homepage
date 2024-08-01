@@ -23,3 +23,13 @@ hugo.linux
 
 # Temporary lock file while building
 /.hugo_build.lock
+
+## Items mentioned in theme (using # for already added items)
+
+.DS_Store
+node_modules
+.idea
+.vs_code
+#public
+resources
+#.hugo_build.lock

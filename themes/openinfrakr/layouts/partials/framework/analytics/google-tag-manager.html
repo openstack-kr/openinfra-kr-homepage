@@ -1,0 +1,28 @@
+{{ if .Site.IsServer }}
+  <!-- Dont add Google analytics to localhost -->
+{{ else }}
+  {{ $cookie_banner_controlled := false }}
+  {{ if .Site.Params.cookie_banner.enabled }}
+    {{ $cookie_banner_controlled := "data-cookiecategory='analytics' type='text/plain'" }}
+  {{ end }}
+
+  {{ $env_gtm_id := (getenv "HUGO_GTM_ID") }}
+
+  {{ if $env_gtm_id }}
+    <!-- Google Tag Manager -->
+    <script {{$cookie_banner_controlled}}>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{$env_gtm_id}}');</script>
+    <!-- End Google Tag Manager -->
+  {{ else if .Site.Params.analytics.gtm_id }}
+    <!-- Google Tag Manager -->
+    <script {{$cookie_banner_controlled}}>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{.Site.Params.analytics.gtm_id}}');</script>
+    <!-- End Google Tag Manager -->
+  {{ end }}
+{{ end }}

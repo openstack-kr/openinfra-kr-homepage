@@ -1,0 +1,25 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+    {{ if .Params.hero }}
+        {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+    {{ else }}
+    <div class="section section-base-bg pt-md-16 pb-md-0">
+        {{ partial "framework/sections/title/title.html" (dict "context" $ "title" .Params.title "description" .Params.description "image" .Params.image) }}
+    </div>
+    {{ end }}
+
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-8 col-lg-7">
+                    <div class="content">{{ .Content }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{{ end }}

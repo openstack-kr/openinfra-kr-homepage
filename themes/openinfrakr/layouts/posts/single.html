@@ -1,0 +1,36 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-posts-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+    <div class="section section-base-bg pt-md-16 pb-md-0">
+        <div class="container">
+            <div class="row">
+                {{ if .Params.image }}
+                    <div class="col-12 col-lg-12" style="max-height: 500px; overflow: hidden;">
+                        <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+                    </div>
+                {{ end }}
+                <div class="col-12 col-lg-10 pt-4">
+                    <h1>{{ .Title }}</h1>
+                    <h2>{{ .Params.description }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-8 col-lg-7">
+                    <div class="content">{{ .Content }}</div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 offset-lg-1">
+                    {{ partial "framework/components/sidebar.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{{ end }}

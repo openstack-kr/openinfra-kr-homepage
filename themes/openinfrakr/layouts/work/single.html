@@ -1,0 +1,58 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-work-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+    {{ if .Params.hero }}
+        {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+    {{ else }}
+        <div class="section section-base-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1>{{ .Title }}</h1>
+                        <h2>{{ .Params.description }}</h2>
+                    </div>
+                    {{ if .Params.image }}
+                        <div class="col-12 col-lg-12" style="max-height: 400px; overflow: hidden;">
+                            <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-8 col-lg-7">
+                    <div class="content">{{.Content}}</div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 offset-lg-1">
+                    {{ if .Params.aside }}
+                    <aside class="aside">
+                        {{ with .Params.aside }}
+                            {{ if or (.client_label) (.client_content) }}
+                                <div class="aside-client">
+                                    <h3>{{ if .client_label }}<strong>{{ .client_label }}: </strong>{{ end }}{{ .client_content }}</h3>
+                                </div>
+                            {{ end }}
+                            <div class="aside-text">
+                                <strong>Brief: </strong>{{ .text }}
+                            </div>
+                            {{ if or (.link_label) (.link_url) }}
+                                <div class="aside-link">
+                                    <strong>{{.link_label}}: </strong><a href="{{ .link_url }}">{{ .link_url }}</a>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    </aside>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{{ end }}

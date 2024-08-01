@@ -1,0 +1,11 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-custom-single{{ end }}
+
+{{ define "main" }}
+
+    <!-- Sections -->
+    {{ range .Params.sections }}
+        {{ partial "framework/sections/section.html" (dict "context" $ "section" . "type" .type) }}
+    {{ end }}
+
+{{ end }}

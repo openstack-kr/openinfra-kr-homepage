@@ -1,0 +1,25 @@
+
+{{ if site.Params.cookie_banner.enabled }}
+  {{$cookie_banner_controlled:= "data-cookiecategory='comments' type='text/plain'" }}
+  <div id="disqus_thread">
+  <button class="load-disqus-button button" onclick="loadDisqus();return false;">Show/Post Comments</button> 
+  </div>
+
+  <script {{$cookie_banner_controlled}}>
+    var disqus_shortname = "{{ site.Params.comments.disqus.shortname }}";
+    var disqus_config = function () {
+      this.page.url = '{{ .RelPermalink }}';
+      this.page.identifier = '{{ .RelPermalink }}';
+    };
+    var is_disqus_loaded = false;
+    function loadDisqus() {  
+      if (!is_disqus_loaded){
+        is_disqus_loaded = true;
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname +'.disqus.com/embed.js';   
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+    };
+  </script>
+{{ end }}

@@ -1,0 +1,54 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-posts-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+    {{ if .Params.hero }}
+        {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+    {{ else }}
+        <div class="section section-base-bg pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1>{{ .Title }}</h1>
+                        <h2>{{ .Params.description }}</h2>
+                    </div>
+                    {{ if .Params.image }}
+                        <div class="col-12 col-lg-12" style="max-height: 400px; overflow: hidden;">
+                            <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+
+    <div class="section section-base-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+                        {{ range $paginator.Pages }}
+                            <div class="col-12 mb-4">
+                                {{ partial "framework/summary/summary-row.html" . }}
+                            </div>
+                        {{ end }}
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                        {{ partial "framework/components/paginator" . }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="sidebar">
+                        {{ partial "framework/taxonomy/list-terms-by-taxonomy" (dict "site" .Site "context" . "taxonomy" "categories" "heading" "Categories") }}
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+{{ end }}

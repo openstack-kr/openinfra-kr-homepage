@@ -1,0 +1,247 @@
+baseURL: https://openinfra-kr.org
+languageCode: ko-kr
+title: OpenInfra Korea User Group
+theme: "openinfrakr"
+paginate: 8
+enableGitInfo: false
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsUseClasses: true
+metaDataFormat: yaml
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+params:
+  colors:
+    base_bg: '#ffffff'
+    base_bg_2: '#f8fafc'
+    base_bg_3: '#f1f5f9'
+    base_text: '#202020'
+    base_text_2: '#4b5563'
+    primary_bg: '#2b3af7'
+    primary_bg_2: '#424ff8'
+    primary_bg_3: '#702bf7'
+    primary_text: '#fdfcf9'
+    header_text: '#2b3af7'
+    logo_text: '#2b3af7'
+    base_bg_dark: '#121212'
+    base_bg_2_dark: '#1e1e1e'
+    base_bg_3_dark: '#232323'
+    base_text_dark: '#ffffff'
+    base_text_2_dark: '#d7d7d7'
+    primary_bg_dark: '#2b3af7'
+    primary_bg_2_dark: '#424ff8'
+    primary_bg_3_dark: '#702bf7'
+    primary_text_dark: '#fdfcf9'
+    logo_text_dark: '#ffffff'
+    header_text_dark: '#ffffff'
+  fonts:
+    use_google_fonts: false
+    google_fonts: https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Source+Code+Pro&family=Source+Sans+3:wght@300;400;700&display=swap
+    use_self_hosted_fonts: true
+    logo: Lato
+    heading: Lato
+    base: '''Source Sans 3'''
+    monospace: '''Source Code Pro'''
+  logo:
+    logo_text: Advance
+    logo_image_desktop: images/logo/logo.svg
+    logo_image_mobile: images/logo/logo-mobile.svg
+    logo_image_desktop_invert: images/logo/logo-invert.svg
+    logo_image_mobile_invert: images/logo/logo-invert-mobile.svg
+    logo_image_desktop_height: 34px
+    logo_image_desktop_width: 34px
+    logo_image_mobile_height: 34px
+    logo_image_mobile_width: 34px
+    show_logo_image_on_mobile: true
+    show_logo_image_on_desktop: true
+    show_logo_text_on_mobile: false
+    show_logo_text_on_desktop: true
+    logo_text_font_size: 24px
+    logo_text_font_weight: "500"
+  header:
+    fixed: true
+    header_height: 60px
+    header_menu_font_size: 18px
+  open_graph:
+    og_type: website
+    og_twitter_card: summary
+    og_twitter_site: '@zerostaticio'
+    og_twitter_creator: '@zerostaticio'
+  dark_mode:
+    enable_dark_mode: true
+    show_dark_mode_toggle_in_header: false
+    show_dark_mode_toggle_in_bottom: true
+    show_dark_mode_toggle_in_mobile_menu: true
+  cookie_banner:
+    enabled: false
+    show_manage_cookies_at_bottom: false
+  analytics:
+    google_analytics_id: ""
+    gtm_id: ""
+    plausible_data_domain: ""
+    umami_data_website_id: ""
+    umami_src: ""
+  comments:
+    commento:
+      enabled: true
+    disqus:
+      shortname: ""
+  newsletter:
+    mailchimp:
+      form_action_url: https://zerostatic.us21.list-manage.com/subscribe/post?u=798e19886b83aaab346734382&amp;id=f1c526a772&amp;f_id=0027e3e6f0
+      form_title: Let's keep in touch
+  contact_form:
+    use_netlify_form: false
+    use_formspree_form: true
+    formspree_endpoint: https://formspree.io/f/moqyklqv
+    netlify_form_name: contact
+  multilingual:
+    enable_language_switcher: false
+    show_language_switcher_in_header: false
+  menu:
+    show_dropdown_items_in_mobile_menu: false
+    show_social_media_in_mobile_menu: true
+  footer:
+    enable_footer: true
+    footer_title: Hugo Advance
+    footer_description: Advance is a multi-purpose premium Hugo theme. Modern design, clean code and highly configurable.
+    enable_social_media_links: true
+    enable_languages: true
+    enable_copyright: false
+    enable_menu_footer_primary: true
+    enable_menu_footer_secondary: true
+    enable_menu_footer_tertiary: true
+    footer_primary_menu_title: Product
+    footer_secondary_menu_title: Company
+    footer_tertiary_menu_title: Support
+  bottom:
+    enabled: true
+    enable_bottom_menu: true
+    copyright_text: © 2023 Zerostatic Themes
+    show_rss_icon: true
+languages:
+  en:
+    weight: 0
+    languageName: English
+    contentDir: content/en
+    menu:
+      main:
+        - name: Services
+          identifier: services
+          url: /services/
+          pageRef: services
+          weight: 1
+        - name: Branding
+          parent: services
+          url: /services/branding
+          params:
+            icon: images/icons/icons8-color-palette-100.png
+        - name: Our Work
+          identifier: work
+          url: /work/
+          pageRef: work
+          weight: 2
+        - name: Blog
+          identifier: blog
+          url: /blog/
+          pageRef: posts
+          weight: 3
+        - name: About
+          identifier: about
+          url: /about/
+          pageRef: about
+          weight: 4
+        - name: Buy Now
+          url: https://www.zerostatic.io/theme/hugo-advance/
+          weight: 10
+          params:
+            external: true
+            button: true
+      footer_primary:
+        - name: Services
+          url: /services/
+          weight: 1
+        - name: Work
+          url: /work/
+          weight: 2
+      footer_secondary:
+        - name: Team
+          url: /team/
+          pageRef: team
+          weight: 1
+      footer_tertiary:
+        - name: Buy Now
+          url: https://www.zerostatic.io/theme/hugo-advance/
+          weight: 1
+          params:
+            external: true
+            button: true
+        - name: Contact
+          url: /contact/
+          weight: 2
+          pageRef: contact
+        - name: Styleguide
+          url: /styleguide/
+          weight: 3
+          pageRef: styleguide
+      bottom:
+        - name: Terms
+          url: /terms/
+          weight: 1
+        - name: Privacy
+          url: /privacy/
+          weight: 2
+  fr:
+    weight: 1
+    languageName: Français
+    contentDir: content/fr
+    title: Hugo Avance
+    params:
+      footer:
+        footer_primary_menu_title: Produit
+        footer_secondary_menu_title: Compagnie
+        footer_tertiary_menu_title: Support
+    menu:
+      main:
+        - name: Prestations de service
+          identifier: services
+          url: /services/
+          weight: 1
+        - name: Notre Travail
+          identifier: work
+          url: /work/
+          weight: 2
+        - name: Blog
+          identifier: blog
+          url: /blog/
+          weight: 3
+        - name: À Propos
+          identifier: about
+          url: /about/
+          weight: 4
+      footer_primary:
+        - name: Services
+          url: /services/
+          weight: 1
+        - name: Work
+          url: /work/
+          weight: 2
+      footer_tertiary:
+        - name: Buy Now
+          url: https://www.zerostatic.io/theme/hugo-advance/
+          weight: 10
+          params:
+            external: true
+            button: true
+permalinks:
+  posts: blog/:year/:month/:title/
+  pages: :slug/
+taxonomies:
+  tag: tags
+  category: categories
+  portfolio: portfolio
+  author: authors
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

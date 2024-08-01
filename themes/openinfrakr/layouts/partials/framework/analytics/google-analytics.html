@@ -1,0 +1,30 @@
+{{ if .Site.IsServer }}
+    <!-- Dont add Google analytics to localhost -->
+{{ else }}
+  {{ $cookie_banner_controlled := false }}
+  {{ if .Site.Params.cookie_banner.enabled }}
+    {{ $cookie_banner_controlled := "data-cookiecategory='analytics' type='text/plain'" }}
+  {{ end }}
+
+  {{ $env_google_analytics_id := (getenv "HUGO_GOOGLE_ANALYTICS_ID") }}
+
+    {{ if $env_google_analytics_id }}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{$env_google_analytics_id}}" {{$cookie_banner_controlled}}></script>
+      <script {{$cookie_banner_controlled}}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', '{{$env_google_analytics_id}}');
+      </script>
+    {{ else if .Site.Params.analytics.google_analytics_id }}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.Params.analytics.google_analytics_id}}" {{$cookie_banner_controlled}}></script>
+      <script {{$cookie_banner_controlled}}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{.Site.Params.analytics.google_analytics_id}}');
+      </script>
+    {{ end }}
+{{ end }}
