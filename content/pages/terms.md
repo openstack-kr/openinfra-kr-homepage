@@ -1,6 +1,6 @@
 ---
 title: 'Terms and Conditions'
-date: 2021-24-01
+date: 2021-04-07
 url: "terms"
 ---
 

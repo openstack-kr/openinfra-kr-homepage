@@ -1,6 +1,6 @@
 ---
 title: 'Privacy Policy'
-date: 2021-24-01
+date: 2021-04-07
 url: "privacy"
 ---
 
