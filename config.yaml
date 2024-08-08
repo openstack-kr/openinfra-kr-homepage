@@ -158,7 +158,7 @@ languages:
           weight: 4
         - identifier: forum
           parent: community-group
-          name: 포럼
+          name: Forum
           url: https://forum.openinfra-kr.org
           weight: 41
           params:
