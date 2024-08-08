@@ -153,6 +153,16 @@ languages:
           name: Recruit
           url: recruit
           weight: 33
+        - identifier: community-group
+          name: Community
+          weight: 4
+        - identifier: forum
+          parent: community-group
+          name: 포럼
+          url: https://forum.openinfra-kr.org
+          weight: 41
+          params:
+            external: true
         - identifier: tech-group
           name: Tech
           weight: 5
@@ -192,12 +202,6 @@ languages:
           name: Hall of Fame
           url: hall-of-fame
           weight: 71
-        - name: Community - Forum
-          url: https://forum.openinfra-kr.org
-          weight: 10
-          params:
-            external: true
-            button: true
       footer_primary:
         - name: Team
           url: /team/
@@ -271,6 +275,16 @@ languages:
           name: 채용 공고
           url: recruit
           weight: 33
+        - identifier: community-group
+          name: Community
+          weight: 4
+        - identifier: forum
+          parent: community-group
+          name: Forum
+          url: https://forum.openinfra-kr.org
+          weight: 41
+          params:
+            external: true
         - identifier: tech-group
           name: Tech
           weight: 5
@@ -310,12 +324,6 @@ languages:
           name: 명예의 전당
           url: hall-of-fame
           weight: 71
-        - name: 커뮤니티 - 포럼
-          url: https://forum.openinfra-kr.org
-          weight: 10
-          params:
-            external: true
-            button: true
       footer_primary:
         - name: Team
           url: /team/
