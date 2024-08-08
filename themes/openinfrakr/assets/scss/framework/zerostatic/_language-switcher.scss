@@ -15,7 +15,7 @@
   }
 
   .language-switcher-button {
-    border: 1px solid var(--color-primary-bg);
+    border: 1px solid var(--color-base-bg);
     color: inherit;
     svg {
       height: 16px;
@@ -38,14 +38,14 @@
     padding: 0;
     .language-switcher-translations {
       box-shadow: 1px 3px 6px 0 rgba(0,0,0,0.1);
-      border: 1px solid var(--color-base-bg-2);
+      border: 1px solid var(--color-primary-bg-2);
       border-radius: 3px;
-      background: var(--color-base-bg);
+      background: var(--color-primary-bg);
       position: relative;
       &:before {
         border-left: 6px solid transparent;
         border-right: 6px solid transparent;
-        border-bottom: 6px solid var(--color-base-bg);
+        border-bottom: 6px solid var(--color-primary-bg);
         content: '';
         top: -6px;
         margin-left: -6px;
@@ -55,7 +55,7 @@
       ul {
         margin: 0;
         display: block;
-        background: var(--color-base-bg);
+        background: var(--color-primary-bg);
         border-radius: 3px;
         padding: 4px;
         li {
@@ -63,10 +63,10 @@
           a {
             display: block;
             padding: 3px 10px;
-            color: var(--color-base-text);
+            color: var(--color-primary-text);
             transition: background 0.1s linear;
             &:hover {
-              background: var(--color-base-bg-2);
+              background: var(--color-primary-bg-2);
               border-radius: 3px;
               transition: background 0.2s linear;
               text-decoration: none;
