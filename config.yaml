@@ -145,35 +145,54 @@ languages:
           weight: 31
         - identifier: events
           parent: news-group
-          name: Blog
-          url: blog
+          name: Events
+          url: events
           weight: 32
         - identifier: recruit
           parent: news-group
           name: Recruit
           url: recruit
           weight: 33
-        - name: Community
-          identifier: community
-          url: https://forum.openinfra-kr.org/
-          pageRef: community
-          weight: 4
-        - name: Tech
-          identifier: tech
-          url: /tech/
-          pageRef: tech
+        - identifier: tech-group
+          name: Tech
           weight: 5
-        - name: Get Involved
-          identifier: get-involved
-          url: /get-involved/
-          pageRef: get-involved
+        - identifier: get-started
+          parent: tech-group
+          name: Tech
+          url: get-started
+          weight: 51
+        - identifier: wiki
+          parent: tech-group
+          name: Wiki
+          url: wiki
+          weight: 52
+        - identifier: archive
+          parent: tech-group
+          name: Archive
+          url: archive
+          weight: 53
+        - identifier: get-involved-group
+          name: Get Involved
           weight: 6
-        - name: Hall of Fame
-          identifier: hall-of-fame
-          url: /hall-of-fame/
-          pageRef: hall-of-fame
+        - identifier: contribution
+          parent: get-involved-group
+          name: Contribution
+          url: contribution
+          weight: 61
+        - identifier: subscription
+          parent: get-involved-group
+          name: Subscription
+          url: subscription
+          weight: 62
+        - identifier: hall-of-fame-group
+          name: Hall of Fame
           weight: 7
-        - name: Forum
+        - identifier: hall-of-fame
+          parent: hall-of-fame-group
+          name: Hall of Fame
+          url: hall-of-fame
+          weight: 71
+        - name: Community - Forum
           url: https://forum.openinfra-kr.org
           weight: 10
           params:
@@ -226,43 +245,72 @@ languages:
           identifier: home
           url: /
           weight: 1
-        - name: About
-          identifier: about
-          #url: /about/
-          url: /
-          pageRef: about
+        - identifier: about-group
+          name: 소개
           weight: 2
-        # - name: Branding
-        #   parent: services
-        #   url: /services/branding
-        #   params:
-        #     icon: images/icons/icons8-color-palette-100.png
-        - name: News
-          identifier: news
-          url: /news/
-          pageRef: news
+        - identifier: about
+          parent: about-group
+          name: 커뮤니티 소개
+          url: about
+          weight: 21
+        - identifier: news-group
+          name: News
           weight: 3
-        - name: Community
-          identifier: community
-          url: /community/
-          pageRef: community
-          weight: 4
-        - name: Tech
-          identifier: tech
-          url: /tech/
-          pageRef: tech
+        - identifier: hot
+          parent: news-group
+          name: Hot
+          url: hot
+          weight: 31
+        - identifier: events
+          parent: news-group
+          name: 행사
+          url: events
+          weight: 32
+        - identifier: recruit
+          parent: news-group
+          name: 채용 공고
+          url: recruit
+          weight: 33
+        - identifier: tech-group
+          name: Tech
           weight: 5
-        - name: Get Involved
-          identifier: get-involved
-          url: /get-involved/
-          pageRef: get-involved
+        - identifier: get-started
+          parent: tech-group
+          name: Tech
+          url: get-started
+          weight: 51
+        - identifier: wiki
+          parent: tech-group
+          name: Wiki
+          url: wiki
+          weight: 52
+        - identifier: archive
+          parent: tech-group
+          name: Archive
+          url: archive
+          weight: 53
+        - identifier: get-involved-group
+          name: Get Involved
           weight: 6
-        - name: Hall of Fame
-          identifier: hall-of-fame
-          url: /hall-of-fame/
-          pageRef: hall-of-fame
+        - identifier: contribution
+          parent: get-involved-group
+          name: Contribution
+          url: contribution
+          weight: 61
+        - identifier: subscription
+          parent: get-involved-group
+          name: Subscription
+          url: subscription
+          weight: 62
+        - identifier: hall-of-fame-group
+          name: 명예의 전당
           weight: 7
-        - name: Forum
+        - identifier: hall-of-fame
+          parent: hall-of-fame-group
+          name: 명예의 전당
+          url: hall-of-fame
+          weight: 71
+        - name: 커뮤니티 - 포럼
           url: https://forum.openinfra-kr.org
           weight: 10
           params:
