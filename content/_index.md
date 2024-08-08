@@ -39,71 +39,80 @@ hero:
     shadow: false
     border: false
     alt: ""
-  buttons:
-    - button:
-      text: "Learn More"
-      url: "services/"
-      external: false
-      fa_icon: false
-      outline: true
-      style: "transparent"
-    - button:
-      text: "Buy Now"
-      url: "https://www.zerostatic.io/theme/hugo-advance/"
-      external: true
-      show_external_icon: true
-      fa_icon: false
-      outline: true
-      style: "transparent"
+
 services:
-  enabled: true
+  enabled: false
   show_view_all: true
   sort_by: "weight" # "date" "weight"
   limit: 3
+
 intro:
   enabled: true
   align: left
-  image: "images/photos/content/content-5.webp"
-  heading: "We Help Business Grow"
-  description: "Our software empowers customers and retailers to work from anywhere in the world, on the go, or at home."
+  image: "/images/photos/home/content-6-thumbnail.jpg"
+  heading: "Building the next decade of open infrastructure including OpenStack."
+  description: ""
+  bullets:
+    - text: "Hosts regular OpenInfra seminar for engineers and developers in Korea."
+      fa_icon: "fas fa-check"
+    - text: "Help users to study OpenInfra projects."
+      fa_icon: "fas fa-check"
+    - text: "Make people to contribute OpenInfra projects with upstream training."
+      fa_icon: "fas fa-check"
+    - text: "Holds OpenInfra Community Days Korea event annually with other communities."
+      fa_icon: "fas fa-check"
   buttons:
     - button:
-      text: "View Our Services"
-      url: "https://www.zerostatic.io/docs/hugo-advance/"
+      text: "About Us"
+      #url: "/about"
+      url: "/"
       external: false
-      fa_icon: false
-      outline: true
+      fa_icon: ""
+      size: large
+      outline: false
       style: "primary"
-  partners:
-    enabled: true
-work:
-  enabled: true
-  label: "Our Portfolio"
-  show_view_all: false
+
+partners:
+  enabled: false
+  limit: 5
+  sort: "weight" # 'date'
+
+projects:
+  enabled: false
+  heading: "Our Projects"
+  description: ""
   limit: 2
+  columns: 2
+  sort: "weight" # 'date'
+  view_more_button_text: "View All Projects"
+  view_more_button_link: "/projects"
+
 outro:
   enabled: true
   align: center
-  image: ""
+  #image: false
   heading: Get Started Today
-  description: Save time and money using this premium Hugo theme.
+  description: "Get your own open infra and OpenStack today"
+  features:
+    enabled: false
+    list:
+      - text: "Free Quote"
+        fa_icon: "fas fa-envelope-open-text"
   buttons:
     - button:
-      text: "Buy Now"
-      url: "https://www.zerostatic.io/theme/hugo-advance/"
-      external: true
-      fa_icon: false
-      outline: false
-      style: ""
-    - button:
-      text: "Contact Us"
-      url: "contact/"
+      text: "Get Started"
+      url: "/"
+      #url: "/contact"
       external: false
-      fa_icon: false
-      outline: false
-      style: ""
-blog:
-  enabled: true
-  show_view_all: false
+      size: "large"
+
+posts:
+  enabled: false
+  heading: "Latest Posts"
+  description: ""
   limit: 3
+  columns: 3
+  sort: "weight" # 'date'
+  view_more_button_text: "View All Posts"
+  view_more_button_link: "/blog"
 ---

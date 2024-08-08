@@ -20,7 +20,10 @@
             {{ if .info.bullets }}
                 <ul>
                 {{ range .info.bullets }}
-                    <li>{{ . }}</li>
+                    <li>
+                      <i class="{{ if .fa_icon }}{{ .fa_icon }} mr-1{{ end }}"></i>
+                      {{ .text }}
+                    </li>
                 {{ end }}
                 </ul>
             {{ end }}
