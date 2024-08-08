@@ -127,25 +127,35 @@ languages:
           identifier: home
           url: /
           weight: 1
-        - name: About
-          identifier: about
-          #url: /about/
-          url: /
-          pageRef: about
+        - identifier: about-group
+          name: About
           weight: 2
-        # - name: Branding
-        #   parent: services
-        #   url: /services/branding
-        #   params:
-        #     icon: images/icons/icons8-color-palette-100.png
-        - name: News
-          identifier: news
-          url: /news/
-          pageRef: news
+        - identifier: about
+          parent: about-group
+          name: About
+          url: about
+          weight: 21
+        - identifier: news-group
+          name: News
           weight: 3
+        - identifier: hot
+          parent: news-group
+          name: Hot
+          url: hot
+          weight: 31
+        - identifier: events
+          parent: news-group
+          name: Blog
+          url: blog
+          weight: 32
+        - identifier: recruit
+          parent: news-group
+          name: Recruit
+          url: recruit
+          weight: 33
         - name: Community
           identifier: community
-          url: /community/
+          url: https://forum.openinfra-kr.org/
           pageRef: community
           weight: 4
         - name: Tech
