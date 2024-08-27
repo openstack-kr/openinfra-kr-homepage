@@ -2,249 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/sage-kirk/</loc>
-    <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/ai-alignment-advances-intended-goals/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-development/</loc>
-    <lastmod>2018-11-28T15:14:54+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/software-engineering/</loc>
-    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/robert-johnson/</loc>
-    <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/cognitive-architectures-dimensional-space/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/seo/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/mike-vance/</loc>
-    <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/knowledge-behaviour-ai-ethics/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/branding/</loc>
-    <lastmod>2019-10-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/michelle-stewart/</loc>
-    <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-design/</loc>
-    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/user-experience/</loc>
-    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/</loc>
-    <lastmod>2022-02-13T09:49:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/authors/"
-                />
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/</loc>
-    <lastmod>2022-02-13T09:49:03+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/categories/"
-                />
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/development/</loc>
-    <lastmod>2022-02-13T09:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2022/02/improving-page-speed/</loc>
-    <lastmod>2022-02-13T09:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi-harmon/</loc>
-    <lastmod>2022-02-13T09:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/seo/</loc>
-    <lastmod>2022-02-13T09:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/alec-mendez/</loc>
-    <lastmod>2022-02-11T16:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/branding/</loc>
-    <lastmod>2022-02-11T16:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2022/02/ideas-to-help-your-business-grow/</loc>
-    <lastmod>2022-02-11T16:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/marc-paulo/</loc>
-    <lastmod>2022-02-11T16:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/marketing/</loc>
-    <lastmod>2022-02-11T16:49:03+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/mike-vance/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/product/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2021/07/working-with-hugo/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi_harmon/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2021/07/targeting-keywords-to-generate-seo-traffic/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/web-design/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/pages/</loc>
-    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/privacy/</loc>
-    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/styleguide/</loc>
-    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/terms/</loc>
-    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/alec_mendez/</loc>
-    <lastmod>2021-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2021/02/the-most-important-analytics-metrics-for-new-business/</loc>
-    <lastmod>2021-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/09/reaching-your-audience-with-the-right-content-strategy/</loc>
-    <lastmod>2020-09-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/08/using-liquid-templates/</loc>
-    <lastmod>2020-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/06/customizing-themes-with-css-html/</loc>
-    <lastmod>2020-06-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/02/creative-ideas-to-improve-your-writing/</loc>
-    <lastmod>2020-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/01/learn-how-to-market-your-next-startup/</loc>
-    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/12/building-websites-with-the-jamstack/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/hosting/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/sage-kirk/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/11/security-first-with-static-websites/</loc>
-    <lastmod>2019-11-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/08/what-is-the-jamstack/</loc>
-    <lastmod>2019-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/</loc>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://openstack-kr.github.io/openinfra-kr-homepage/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/"
+                />
   </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/</loc>
-    <lastmod>2019-02-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/categories/javascript/</loc>
-    <lastmod>2018-12-29T10:26:40+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/tags/</loc>
-    <lastmod>2018-12-29T10:26:40+10:00</lastmod>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/tags/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/tags/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/authors/"
                 />
   </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/tags/tutorials/</loc>
-    <lastmod>2018-12-29T10:26:40+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/writing-with-markdown/</loc>
-    <lastmod>2018-12-29T10:26:40+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/hosting-your-static-site/</loc>
-    <lastmod>2018-12-29T10:24:47+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/robert-austin/</loc>
-    <lastmod>2018-12-29T10:24:47+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/github/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ko"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/ko/portfolio/"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/categories/"
+                />
+  </url><url>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/portfolio/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
                 href="https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/portfolio/"
+                />
   </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/research/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/designing-your-brand/</loc>
-    <lastmod>2018-12-20T09:49:03+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/optimizing-your-website/</loc>
-    <lastmod>2018-12-20T09:38:03+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/</loc>
-    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/contact/</loc>
-    <lastmod>2018-02-22T17:01:34+07:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/contact/success/</loc>
-    <lastmod>2018-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/</loc>
-    <lastmod>2018-02-12T15:37:57+07:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/</loc>
-    <lastmod>2018-02-10T11:52:18+07:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/</loc>
-    <lastmod>2018-02-10T11:52:18+07:00</lastmod>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/tags/"
+                />
   </url>
 </urlset>

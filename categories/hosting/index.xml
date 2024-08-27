@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hosting on OpenInfra Korea User Group</title>
+    <title>Hosting on 오픈 인프라 한국 사용자 그룹</title>
     <link>https://openstack-kr.github.io/openinfra-kr-homepage/categories/hosting/</link>
-    <description>Recent content in Hosting on OpenInfra Korea User Group</description>
+    <description>Recent content in Hosting on 오픈 인프라 한국 사용자 그룹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/categories/hosting/index.xml" rel="self" type="application/rss+xml" />
