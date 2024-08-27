@@ -8,7 +8,7 @@ pygmentsCodeFences: true
 pygmentsCodefencesGuessSyntax: true
 pygmentsUseClasses: true
 metaDataFormat: yaml
-defaultContentLanguage: en
+defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
 params:
   colors:
@@ -101,8 +101,8 @@ params:
     show_social_media_in_mobile_menu: true
   footer:
     enable_footer: true
-    footer_title: OpenInfra Korea Group
-    footer_description: OpenInfra Korea Group is home of all open infra community including OpenStack
+    footer_title: OpenInfra Korea User Group
+    footer_description: OpenInfra Korea User Group is the home of all open infra communities including OpenStack in Korea.
     enable_social_media_links: true
     enable_languages: true
     enable_copyright: false

@@ -50,20 +50,20 @@ intro:
   enabled: true
   align: left
   image: "/images/photos/home/content-6-thumbnail.jpg"
-  heading: "오픈스택을 포함, 오픈 인프라에 대한 주제를 자유롭게 논의하는 커뮤니티입니다."
+  heading: "Building the next decade of open infrastructure including OpenStack."
   description: ""
   bullets:
-    - text: "국내 엔지니어 및 개발자를 대상으로 정기 세미나 개최"
+    - text: "Hosts regular OpenInfra seminar for engineers and developers in Korea."
       fa_icon: "fas fa-check"
-    - text: "오픈 인프라 프로젝트를 스터디하는데 돕기"
+    - text: "Help users to study OpenInfra projects."
       fa_icon: "fas fa-check"
-    - text: "업스트림 트레이닝을 통한 오픈인프라 프로젝트 참여, 컨트리뷰션 및 확산"
+    - text: "Make people to contribute OpenInfra projects with upstream training."
       fa_icon: "fas fa-check"
-    - text: "관련 커뮤니티와 오픈 인프라 커뮤니티 데이 행사를 매년 개최"
+    - text: "Holds OpenInfra Community Days Korea event annually with other communities."
       fa_icon: "fas fa-check"
   buttons:
     - button:
-      text: "커뮤니티 소개"
+      text: "About Us"
       #url: "/about"
       url: "/"
       external: false
@@ -91,8 +91,8 @@ outro:
   enabled: true
   align: center
   #image: false
-  heading: 지금 커뮤니티에 참여하세요
-  description: "여러분만의 오픈 인프라와 오픈스택을 만들어보세요"
+  heading: Get Started Today
+  description: "Get your own open infra and OpenStack today"
   features:
     enabled: false
     list:
@@ -100,7 +100,7 @@ outro:
         fa_icon: "fas fa-envelope-open-text"
   buttons:
     - button:
-      text: "시작하기"
+      text: "Get Started"
       url: "/"
       #url: "/contact"
       external: false
