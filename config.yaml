@@ -116,7 +116,7 @@ params:
     enabled: true
     enable_bottom_menu: true
     copyright_text: © 2024 OpenInfra Korea Group All Rights Reserved
-    show_rss_icon: true
+    show_rss_icon: false
 languages:
   en:
     weight: 0
@@ -172,10 +172,10 @@ languages:
             button: true
       bottom:
         - name: Terms
-          url: /terms/
+          url: terms
           weight: 1
         - name: Privacy
-          url: /privacy/
+          url: privacy
           weight: 2
   ko:
     weight: 0
@@ -246,10 +246,10 @@ languages:
             button: true
       bottom:
         - name: Terms
-          url: /terms/
+          url: terms
           weight: 1
         - name: Privacy
-          url: /privacy/
+          url: privacy
           weight: 2
 permalinks:
   posts: blog/:year/:month/:title/
