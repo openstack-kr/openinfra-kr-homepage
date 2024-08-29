@@ -7,6 +7,8 @@
 {{ $heading := .hero.headings.heading | default "Heading" }}
 {{ $sub_heading := .hero.headings.sub_heading | default false }}
 {{ $text := .hero.headings.text | default false }}
+{{ $text2 := .hero.headings.text2 | default false }}
+{{ $text3 := .hero.headings.text3 | default false }}
 {{ $text_color := .hero.headings.text_color | default false }}
 {{ $text_color_dark := .hero.headings.text_color_dark | default false }}
 {{ $background_image := .hero.background.background_image | default false }}
@@ -69,8 +71,17 @@
                     {{ if $sub_heading }}
                         <h2>{{ $sub_heading }}</h2>
                     {{ end }}
+
                     {{ if $text }}
                         <p>{{ $text }}</p>
+                    {{ end }}
+
+                    {{ if $text2 }}
+                        <br /><p>{{ $text2 }}</p>
+                    {{ end }}
+
+                    {{ if $text3 }}
+                    <br /><p>{{ $text3 }}</p>
                     {{ end }}
 
                     {{ if .hero.buttons }}

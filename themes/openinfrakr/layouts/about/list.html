@@ -1,0 +1,65 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+  {{ if .Params.hero }}
+  {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+  {{ else }}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                {{ if .Params.image }}
+                    <div class="col col-lg-12" >
+                        <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+  {{ end }}
+
+  {{ if .Params.intro.enabled }}
+  <div class="section section-base-bg-2">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  {{ partial "framework/sections/info/info.html" (dict "context" $ "info" .Params.intro) }}
+              </div>
+          </div>
+          {{ if .Params.intro.partners.enabled }}
+          {{ $partners := .Site.Data.partners }}
+              {{ if gt (len $partners) 0}}
+                  <div class="row justify-content-center align-items-center pt-3 pt-md-6">
+                      {{ range .Site.Data.partners }}
+                          <div class="col-4 col-lg-2 text-center mb-1 mt-1">
+                              <img style="max-width: 100px;" height="50px" src="{{ .image | relURL }}" alt="{{ .title }}"/>
+                          </div>
+                      {{ end }}
+                  </div>
+              {{ end }}
+          {{ end }}
+      </div>
+  </div>
+  {{ end }}
+
+
+  {{ if .Content }}
+      <div class="section section-border-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-8">
+                      <div class="content">
+                          {{ .Content }}
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  {{ end }}
+
+{{ end }}
