@@ -125,7 +125,7 @@ languages:
       main:
         - name: Home
           identifier: home
-          url: /
+          url: 
           weight: 1
         - identifier: about-group
           name: About
@@ -135,65 +135,16 @@ languages:
           name: About
           url: about
           weight: 21
-        - identifier: news-group
-          name: News
-          weight: 3
-        - identifier: hot
-          parent: news-group
-          name: Hot
-          url: hot
-          weight: 31
-        - identifier: events
-          parent: news-group
-          name: Events
-          url: events
-          weight: 32
-        - identifier: recruit
-          parent: news-group
-          name: Recruit
-          url: recruit
-          weight: 33
         - identifier: community-group
           name: Community
           weight: 4
         - identifier: forum
           parent: community-group
-          name: Forum
+          name: Forum (Korean)
           url: https://forum.openinfra-kr.org
           weight: 41
           params:
             external: true
-        - identifier: tech-group
-          name: Tech
-          weight: 5
-        - identifier: get-started
-          parent: tech-group
-          name: Tech
-          url: get-started
-          weight: 51
-        - identifier: wiki
-          parent: tech-group
-          name: Wiki
-          url: wiki
-          weight: 52
-        - identifier: archive
-          parent: tech-group
-          name: Archive
-          url: archive
-          weight: 53
-        - identifier: get-involved-group
-          name: Get Involved
-          weight: 6
-        - identifier: contribution
-          parent: get-involved-group
-          name: Contribution
-          url: contribution
-          weight: 61
-        - identifier: subscription
-          parent: get-involved-group
-          name: Subscription
-          url: subscription
-          weight: 62
         - identifier: hall-of-fame-group
           name: Hall of Fame
           weight: 7
@@ -203,25 +154,16 @@ languages:
           url: hall-of-fame
           weight: 71
       footer_primary:
-        - name: Team
-          url: /team/
-          pageRef: team
+        - name: About
+          url: about
           weight: 1
-        - name: Services
-          url: /services/
-          weight: 2
-        - name: Work
-          url: /work/
-          weight: 3
-        - name: Styleguide
-          url: /styleguide/
-          weight: 4
-          pageRef: styleguide
       footer_secondary:
-        - name: Contact
-          url: /contact/
+        - name: Forum
+          url: https://forum.openinfra-kr.org
           weight: 1
-          pageRef: contact
+          params:
+            external: true
+            button: true
         - name: OpenInfra Korea Event
           url: https://www.openinfradays.kr
           weight: 2
@@ -241,13 +183,23 @@ languages:
     title: 오픈 인프라 한국 사용자 그룹
     params:
       footer:
+        enable_footer: true
+        footer_title: 오픈 인프라 한국 사용자 모임
+        footer_description: 오픈스택(OpenStack)을 포함한 모든 오픈 인프라를 위한 국내 커뮤니티입니다.
+        enable_social_media_links: true
+        enable_languages: true
+        enable_copyright: false
+        enable_menu_footer_primary: true
+        enable_menu_footer_secondary: true
+        enable_menu_footer_tertiary: false
         footer_primary_menu_title: 소개
         footer_secondary_menu_title: 참여하기
+        # footer_tertiary_menu_title: Support
     menu:
       main:
         - name: Home
           identifier: home
-          url: /
+          url: 
           weight: 1
         - identifier: about-group
           name: 소개
@@ -257,24 +209,6 @@ languages:
           name: 커뮤니티 소개
           url: about
           weight: 21
-        - identifier: news-group
-          name: News
-          weight: 3
-        - identifier: hot
-          parent: news-group
-          name: Hot
-          url: hot
-          weight: 31
-        - identifier: events
-          parent: news-group
-          name: 행사
-          url: events
-          weight: 32
-        - identifier: recruit
-          parent: news-group
-          name: 채용 공고
-          url: recruit
-          weight: 33
         - identifier: community-group
           name: Community
           weight: 4
@@ -285,37 +219,6 @@ languages:
           weight: 41
           params:
             external: true
-        - identifier: tech-group
-          name: Tech
-          weight: 5
-        - identifier: get-started
-          parent: tech-group
-          name: Tech
-          url: get-started
-          weight: 51
-        - identifier: wiki
-          parent: tech-group
-          name: Wiki
-          url: wiki
-          weight: 52
-        - identifier: archive
-          parent: tech-group
-          name: Archive
-          url: archive
-          weight: 53
-        - identifier: get-involved-group
-          name: Get Involved
-          weight: 6
-        - identifier: contribution
-          parent: get-involved-group
-          name: Contribution
-          url: contribution
-          weight: 61
-        - identifier: subscription
-          parent: get-involved-group
-          name: Subscription
-          url: subscription
-          weight: 62
         - identifier: hall-of-fame-group
           name: 명예의 전당
           weight: 7
@@ -325,25 +228,16 @@ languages:
           url: hall-of-fame
           weight: 71
       footer_primary:
-        - name: Team
-          url: /team/
-          pageRef: team
+        - name: About
+          url: about
           weight: 1
-        - name: Services
-          url: /services/
-          weight: 2
-        - name: Work
-          url: /work/
-          weight: 3
-        - name: Styleguide
-          url: /styleguide/
-          weight: 4
-          pageRef: styleguide
       footer_secondary:
-        - name: Contact
-          url: /contact/
+        - name: Forum
+          url: https://forum.openinfra-kr.org
           weight: 1
-          pageRef: contact
+          params:
+            external: true
+            button: true
         - name: OpenInfra Korea Event
           url: https://www.openinfradays.kr
           weight: 2

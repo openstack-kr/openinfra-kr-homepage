@@ -64,8 +64,7 @@ intro:
   buttons:
     - button:
       text: "About Us"
-      #url: "/about"
-      url: "/"
+      url: "/about"
       external: false
       fa_icon: ""
       size: large

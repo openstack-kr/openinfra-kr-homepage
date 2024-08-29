@@ -1,5 +1,5 @@
 ---
-title: "OpenInfra Korea Group"
+title: "OpenInfra Korea Group (오픈 인프라 한국 사용자 모임)"
 date: 2019-02-22
 permalink: "/"
 description: "OpenInfra Korea Group is home of all open infra community including OpenStack."
@@ -22,8 +22,8 @@ hero:
   fullscreen_mobile: true
   fullscreen_desktop: true
   headings:
-    heading: "OpenInfra Korea Group"
-    sub_heading: "OpenInfra Korea Group is home of all open infra community including OpenStack"
+    heading: "오픈 인프라 한국 사용자 모임"
+    sub_heading: "오픈스택 한국 커뮤니티가 모든 오픈 인프라를 위한 커뮤니티로 발전합니다!"
     text: ''
     text_color: "#FFFFFF"
     text_color_dark: "#FFFFFF"
@@ -64,8 +64,7 @@ intro:
   buttons:
     - button:
       text: "커뮤니티 소개"
-      #url: "/about"
-      url: "/"
+      url: "/about"
       external: false
       fa_icon: ""
       size: large
