@@ -5,9 +5,6 @@
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/sage-kirk/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
   </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/ai-alignment-advances-intended-goals/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/web-development/</loc>
     <lastmod>2018-11-28T15:14:54+10:00</lastmod>
   </url><url>
@@ -17,17 +14,11 @@
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/robert-johnson/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
   </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/cognitive-architectures-dimensional-space/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/seo/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/team/mike-vance/</loc>
     <lastmod>2018-12-20T13:44:30+10:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/knowledge-behaviour-ai-ethics/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/branding/</loc>
     <lastmod>2019-10-03T00:00:00+00:00</lastmod>
@@ -105,6 +96,16 @@
   </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/about/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/about/"
+                />
   </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi_harmon/</loc>
     <lastmod>2021-07-20T00:00:00+00:00</lastmod>
@@ -207,25 +208,6 @@
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/authors/robert-austin/</loc>
     <lastmod>2018-12-29T10:24:47+10:00</lastmod>
   </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/github/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/portfolio/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/"
-                />
-  </url><url>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/research/</loc>
-    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/designing-your-brand/</loc>
     <lastmod>2018-12-20T09:49:03+10:00</lastmod>
   </url><url>
@@ -242,6 +224,27 @@
     <lastmod>2018-02-12T15:37:57+07:00</lastmod>
   </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/</loc>
-    <lastmod>2018-02-10T11:52:18+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/hall-of-fame/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/"
+                />
+  </url><url>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/portfolio/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/"
+                />
   </url>
 </urlset>

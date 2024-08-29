@@ -15,6 +15,18 @@
                 href="https://openstack-kr.github.io/openinfra-kr-homepage/en/"
                 />
   </url><url>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/about/"
+                />
+  </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -37,6 +49,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://openstack-kr.github.io/openinfra-kr-homepage/en/categories/"
+                />
+  </url><url>
+    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/hall-of-fame/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/hall-of-fame/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://openstack-kr.github.io/openinfra-kr-homepage/en/hall-of-fame/"
                 />
   </url><url>
     <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/portfolio/</loc>
