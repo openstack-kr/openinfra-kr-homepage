@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Team on 오픈 인프라 한국 사용자 그룹</title>
-    <link>https://openstack-kr.github.io/openinfra-kr-homepage/team/</link>
+    <link>https://openinfra-kr.org/team/</link>
     <description>Recent content in Team on 오픈 인프라 한국 사용자 그룹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 12 Feb 2018 15:37:57 +0700</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/team/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Feb 2018 15:37:57 +0700</lastBuildDate><atom:link href="https://openinfra-kr.org/team/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sage Kirk</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/team/sage-kirk/</link>
+      <link>https://openinfra-kr.org/team/sage-kirk/</link>
       <pubDate>Thu, 20 Dec 2018 13:44:30 +1000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/team/sage-kirk/</guid>
+      <guid>https://openinfra-kr.org/team/sage-kirk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robert Johnson</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/team/robert-johnson/</link>
+      <link>https://openinfra-kr.org/team/robert-johnson/</link>
       <pubDate>Thu, 20 Dec 2018 13:44:30 +1000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/team/robert-johnson/</guid>
+      <guid>https://openinfra-kr.org/team/robert-johnson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mike Vance</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/team/mike-vance/</link>
+      <link>https://openinfra-kr.org/team/mike-vance/</link>
       <pubDate>Thu, 20 Dec 2018 13:44:30 +1000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/team/mike-vance/</guid>
+      <guid>https://openinfra-kr.org/team/mike-vance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Michelle Stewart</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/team/michelle-stewart/</link>
+      <link>https://openinfra-kr.org/team/michelle-stewart/</link>
       <pubDate>Thu, 20 Dec 2018 13:44:30 +1000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/team/michelle-stewart/</guid>
+      <guid>https://openinfra-kr.org/team/michelle-stewart/</guid>
       <description></description>
     </item>
     

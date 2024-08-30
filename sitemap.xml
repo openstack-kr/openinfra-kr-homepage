@@ -2,12 +2,12 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/en/sitemap.xml</loc>
+    <loc>https://openinfra-kr.org/en/sitemap.xml</loc>
     
   </sitemap>
   
   <sitemap>
-    <loc>https://openstack-kr.github.io/openinfra-kr-homepage/ko/sitemap.xml</loc>
+    <loc>https://openinfra-kr.org/ko/sitemap.xml</loc>
     
       <lastmod>2022-02-13T09:49:03+00:00</lastmod>
     

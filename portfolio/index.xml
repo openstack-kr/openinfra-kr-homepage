@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio on 오픈 인프라 한국 사용자 그룹</title>
-    <link>https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/</link>
+    <link>https://openinfra-kr.org/portfolio/</link>
     <description>Recent content in Portfolio on 오픈 인프라 한국 사용자 그룹</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-kr</language><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <language>ko-kr</language><atom:link href="https://openinfra-kr.org/portfolio/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

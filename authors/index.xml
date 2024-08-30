@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on 오픈 인프라 한국 사용자 그룹</title>
-    <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/</link>
+    <link>https://openinfra-kr.org/authors/</link>
     <description>Recent content in Authors on 오픈 인프라 한국 사용자 그룹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sun, 13 Feb 2022 09:49:03 +0000</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Feb 2022 09:49:03 +0000</lastBuildDate><atom:link href="https://openinfra-kr.org/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jodi Harmon</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi-harmon/</link>
+      <link>https://openinfra-kr.org/authors/jodi-harmon/</link>
       <pubDate>Sun, 13 Feb 2022 09:49:03 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi-harmon/</guid>
+      <guid>https://openinfra-kr.org/authors/jodi-harmon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alec Mendez</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/alec-mendez/</link>
+      <link>https://openinfra-kr.org/authors/alec-mendez/</link>
       <pubDate>Fri, 11 Feb 2022 16:49:03 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/alec-mendez/</guid>
+      <guid>https://openinfra-kr.org/authors/alec-mendez/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Marc Paulo</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/marc-paulo/</link>
+      <link>https://openinfra-kr.org/authors/marc-paulo/</link>
       <pubDate>Fri, 11 Feb 2022 16:49:03 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/marc-paulo/</guid>
+      <guid>https://openinfra-kr.org/authors/marc-paulo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mike Vance</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/mike-vance/</link>
+      <link>https://openinfra-kr.org/authors/mike-vance/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/mike-vance/</guid>
+      <guid>https://openinfra-kr.org/authors/mike-vance/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</description>
     </item>
     
     <item>
       <title>jodi_harmon</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi_harmon/</link>
+      <link>https://openinfra-kr.org/authors/jodi_harmon/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/jodi_harmon/</guid>
+      <guid>https://openinfra-kr.org/authors/jodi_harmon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>alec_mendez</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/alec_mendez/</link>
+      <link>https://openinfra-kr.org/authors/alec_mendez/</link>
       <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/alec_mendez/</guid>
+      <guid>https://openinfra-kr.org/authors/alec_mendez/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sage Kirk</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/sage-kirk/</link>
+      <link>https://openinfra-kr.org/authors/sage-kirk/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/sage-kirk/</guid>
+      <guid>https://openinfra-kr.org/authors/sage-kirk/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.</description>
     </item>
     
     <item>
       <title>Robert Austin</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/robert-austin/</link>
+      <link>https://openinfra-kr.org/authors/robert-austin/</link>
       <pubDate>Sat, 29 Dec 2018 10:24:47 +1000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/authors/robert-austin/</guid>
+      <guid>https://openinfra-kr.org/authors/robert-austin/</guid>
       <description></description>
     </item>
     

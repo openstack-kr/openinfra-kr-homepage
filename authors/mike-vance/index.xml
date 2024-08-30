@@ -2,97 +2,97 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mike Vance on 오픈 인프라 한국 사용자 그룹</title>
-    <link>https://openstack-kr.github.io/openinfra-kr-homepage/authors/mike-vance/</link>
+    <link>https://openinfra-kr.org/authors/mike-vance/</link>
     <description>Recent content in Mike Vance on 오픈 인프라 한국 사용자 그룹</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://openstack-kr.github.io/openinfra-kr-homepage/authors/mike-vance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://openinfra-kr.org/authors/mike-vance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working With Hugo</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2021/07/working-with-hugo/</link>
+      <link>https://openinfra-kr.org/blog/2021/07/working-with-hugo/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2021/07/working-with-hugo/</guid>
+      <guid>https://openinfra-kr.org/blog/2021/07/working-with-hugo/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Reaching your audience with the right content strategy</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/09/reaching-your-audience-with-the-right-content-strategy/</link>
+      <link>https://openinfra-kr.org/blog/2020/09/reaching-your-audience-with-the-right-content-strategy/</link>
       <pubDate>Thu, 10 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/09/reaching-your-audience-with-the-right-content-strategy/</guid>
+      <guid>https://openinfra-kr.org/blog/2020/09/reaching-your-audience-with-the-right-content-strategy/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Using liquid templates</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/08/using-liquid-templates/</link>
+      <link>https://openinfra-kr.org/blog/2020/08/using-liquid-templates/</link>
       <pubDate>Sun, 09 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/08/using-liquid-templates/</guid>
+      <guid>https://openinfra-kr.org/blog/2020/08/using-liquid-templates/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Customizing themes with CSS &amp; HTML</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/06/customizing-themes-with-css-html/</link>
+      <link>https://openinfra-kr.org/blog/2020/06/customizing-themes-with-css-html/</link>
       <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/06/customizing-themes-with-css-html/</guid>
+      <guid>https://openinfra-kr.org/blog/2020/06/customizing-themes-with-css-html/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Creative ideas to improve your writing</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/02/creative-ideas-to-improve-your-writing/</link>
+      <link>https://openinfra-kr.org/blog/2020/02/creative-ideas-to-improve-your-writing/</link>
       <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/02/creative-ideas-to-improve-your-writing/</guid>
+      <guid>https://openinfra-kr.org/blog/2020/02/creative-ideas-to-improve-your-writing/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Learn how to market your next startup</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/01/learn-how-to-market-your-next-startup/</link>
+      <link>https://openinfra-kr.org/blog/2020/01/learn-how-to-market-your-next-startup/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2020/01/learn-how-to-market-your-next-startup/</guid>
+      <guid>https://openinfra-kr.org/blog/2020/01/learn-how-to-market-your-next-startup/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Security first with static websites</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/11/security-first-with-static-websites/</link>
+      <link>https://openinfra-kr.org/blog/2019/11/security-first-with-static-websites/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/11/security-first-with-static-websites/</guid>
+      <guid>https://openinfra-kr.org/blog/2019/11/security-first-with-static-websites/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>What is the Jamstack?</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/08/what-is-the-jamstack/</link>
+      <link>https://openinfra-kr.org/blog/2019/08/what-is-the-jamstack/</link>
       <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2019/08/what-is-the-jamstack/</guid>
+      <guid>https://openinfra-kr.org/blog/2019/08/what-is-the-jamstack/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
     
     <item>
       <title>Designing Your Brand</title>
-      <link>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/designing-your-brand/</link>
+      <link>https://openinfra-kr.org/blog/2018/12/designing-your-brand/</link>
       <pubDate>Thu, 20 Dec 2018 09:49:03 +1000</pubDate>
       
-      <guid>https://openstack-kr.github.io/openinfra-kr-homepage/blog/2018/12/designing-your-brand/</guid>
+      <guid>https://openinfra-kr.org/blog/2018/12/designing-your-brand/</guid>
       <description>Markdown is a lightweight markup language with plain-text-formatting syntax. Its design allows it to be converted to many output formats, but the original tool by the same name only supports HTML. Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
 Since the initial description of Markdown contained ambiguities and unanswered questions, the implementations that appeared over the years have subtle differences and many come with syntax extensions.</description>
     </item>
