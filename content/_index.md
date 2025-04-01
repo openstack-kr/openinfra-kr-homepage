@@ -46,7 +46,7 @@ services:
   sort_by: "weight" # "date" "weight"
   limit: 3
 
-intro:
+intro_1:
   enabled: true
   align: left
   image: "/images/photos/home/content-6-thumbnail.jpg"
@@ -70,6 +70,24 @@ intro:
       size: large
       outline: false
       style: "primary"
+
+events:
+  - title: "오픈스택 한국 커뮤니티 온라인 컨퍼런스"
+    location: "토즈 강남토즈타워점 (서울특별시 강남구 강남대로84길 24-4)"
+    date: "2020.04.17 14:00 (UTC/GMT +9)"
+    fee: "5,000 KRW"
+
+  - title: "오픈스택 4월 스터디"
+    location: "토즈 강남토즈타워점 (서울특별시 강남구 강남대로84길 24-4)"
+    date: "2020.04.17 14:00 (UTC/GMT +9)"
+    fee: "5,000 KRW"
+
+  - title: "오픈스택 4월 세미나"
+    location: "D.CAMP(서울특별시 강남구 선릉로 551 새롬빌딩 3층 디캠프) 6층 다목적홀"
+    date: "2020.04.24 16:00 (UTC/GMT +9)"
+    fee: "0 KRW"
+
+
 
 partners:
   enabled: false
@@ -114,4 +132,5 @@ posts:
   sort: "weight" # 'date'
   view_more_button_text: "View All Posts"
   view_more_button_link: "/blog"
+
 ---

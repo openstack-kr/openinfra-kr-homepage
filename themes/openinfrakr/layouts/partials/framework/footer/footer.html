@@ -1,5 +1,30 @@
 {{ if .Site.Params.footer.enable_footer }}
+
+<!-- Sponsor Section -->
+<section class="sponsors-section">
+    <div class="sponsors-container">
+        <h2>Sponsors</h2>
+        <div class="sponsors-grid">
+            {{ range .Site.Params.sponsors }}
+            <div class="sponsor-card">
+                <a href="{{ .url }}" target="_blank">
+                    <img src="{{ .logo | absURL }}" alt="{{ .name }}">
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
 <div class="footer">
+    <div class="footer_secondary">
+      {{ range .Site.Params.footer_secondary }}
+        {{ if eq .name "mailing" }}
+          <a href="{{ .url }}" class="mailing-button">{{ .name | title }}</a>
+        {{ else }}
+          <a href="{{ .url }}">{{ .name | title }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
     <div class="container">
         <div class="row">
             {{ if or .Site.Params.footer.footer_title .Site.Params.footer.footer_description }}
@@ -91,5 +116,18 @@
         </div>
         {{ end }}
     </div>
+</div>
+<!-- mailing 모달 창 -->
+<div id="mailingListModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>메일링 리스트</h2>
+    <ul>
+      <li>📧 openstack@openinfra.kr</li>
+      <li>📧 kubernetes@openinfra.kr</li>
+      <li>📧 ceph@openinfra.kr</li>
+      <li>📧 networking@openinfra.kr</li>
+    </ul>
+  </div>
 </div>
 {{ end }}

@@ -11,6 +11,18 @@ metaDataFormat: yaml
 defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
 params:
+  sponsors:
+    - name: "NHN"
+      url: "https://nhn.com/"
+      logo: "/images/sponsors/nhn/nhn.png"
+
+    - name: "NHN"
+      url: "https://nhn.com/"
+      logo: "/images/sponsors/nhn/nhn.png"
+
+    - name: "NHN"
+      url: "https://nhn.com/"
+      logo: "/images/sponsors/nhn/nhn.png"
   colors:
     base_bg: '#ffffff'
     base_bg_2: '#f8fafc'
@@ -98,12 +110,12 @@ params:
     show_language_switcher_in_header: true
   menu:
     show_dropdown_items_in_mobile_menu: false
-    show_social_media_in_mobile_menu: true
+    show_social_media_in_mobile_menu: false
   footer:
     enable_footer: true
     footer_title: OpenInfra Korea User Group
     footer_description: OpenInfra Korea User Group is the home of all open infra communities including OpenStack in Korea.
-    enable_social_media_links: true
+    enable_social_media_links: false
     enable_languages: true
     enable_copyright: false
     enable_menu_footer_primary: true
@@ -186,7 +198,7 @@ languages:
         enable_footer: true
         footer_title: 오픈 인프라 한국 사용자 모임
         footer_description: 오픈스택(OpenStack)을 포함한 모든 오픈 인프라를 위한 국내 커뮤니티입니다.
-        enable_social_media_links: true
+        enable_social_media_links: false
         enable_languages: true
         enable_copyright: false
         enable_menu_footer_primary: true
@@ -219,6 +231,27 @@ languages:
           weight: 41
           params:
             external: true
+        - identifier: mailing
+          parent: community-group
+          name: Mailing
+          url: mailing
+          weight: 41
+          params:
+            external: true
+        - identifier: facebook
+          parent: community-group
+          name: Facebook
+          url: https://www.facebook.com/groups/openstack.kr
+          weight: 41
+          params:
+            external: true
+        - identifier: discord
+          parent: community-group
+          name: Discord
+          url: https://discord.gg/vCM6Qj8uKB
+          weight: 41
+          params:
+            external: true
         - identifier: hall-of-fame-group
           name: 명예의 전당
           weight: 7
@@ -238,11 +271,23 @@ languages:
           params:
             external: true
             button: true
-        - name: OpenInfra Korea Event
-          url: https://www.openinfradays.kr
+        - name: Discord
+          url: https://discord.gg/vCM6Qj8uKB
           weight: 2
           params:
             external: true
+            button: true
+        - name: Facebook
+          url: https://www.facebook.com/groups/openstack.kr
+          weight: 3
+          params:
+            external: true
+            button: true
+        - name: Mailing
+          url: mailing
+          weight: 4
+          params:
+            external: false
             button: true
       bottom:
         - name: Terms
