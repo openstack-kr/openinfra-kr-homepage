@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{ if .Params.hero }}
+  <!-- Hero Section -->
+  <section class="relative w-full" style="background-image: url('{{ .Params.hero.background.background_image }}'); background-position: top center; background-size: cover; height: 350px;">
+    
+    <!-- Gradient Overlay if enabled -->
+    {{ if .Params.hero.background.background_gradient }}
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+    {{ end }}
+
+    <div class="container mx-auto px-4 py-12">
+      <div class="flex flex-col justify-center items-center text-center text-white">
+        <h1 class="text-5xl font-bold mb-4 font-sans tracking-tight">{{ .Params.hero.headings.heading }}</h1>
+        <p class="text-lg font-sans tracking-wide">{{ .Params.hero.headings.sub_heading }}</p>
+      </div>
+    </div>
+    
+    <!-- Blend Mode for Background Image if set -->
+    {{ if eq .Params.hero.background.background_image_blend_mode "overlay" }}
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+    {{ end }}
+    </section>
+  {{ end }}
+
+  <!-- 공지사항 목록 -->
+  <div class="container mx-auto py-8">
+    <h2 class="text-3xl font-semibold mb-8">공지사항</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range .Pages }}
+        <li class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <a href="{{ .Permalink }}" class="text-xl font-medium text-blue-600 hover:text-red-600">{{ .Title }}</a>
+          <p class="text-sm text-gray-600 mt-2">{{ .Date.Format "2006-01-02" }}</p>
+          <p class="text-gray-500 mt-2">{{ .Summary }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+
+<!-- Filter Section -->
+<!-- <section class="py-8 bg-gray-50 border-b">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+      <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+        <select class="w-full sm:w-[180px] px-4 py-2 rounded-md border border-gray-300">
+          <option value="all">전체 카테고리</option>
+          <option value="event">이벤트</option>
+          <option value="meetup">밋업</option>
+          <option value="project">프로젝트</option>
+          <option value="community">커뮤니티</option>
+          <option value="membership">멤버십</option>
+          <option value="education">교육</option>
+        </select>
+        <select class="w-full sm:w-[180px] px-4 py-2 rounded-md border border-gray-300">
+          <option value="latest">최신순</option>
+          <option value="oldest">오래된순</option>
+          <option value="important">중요공지순</option>
+        </select>
+      </div>
+      <div class="relative w-full md:w-auto">
+        <input type="search" placeholder="공지사항 검색" class="pl-10 w-full md:w-[300px] px-4 py-2 rounded-md border border-gray-300">
+        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+      </div>
+    </div>
+  </div>
+</section> -->
+{{ end }} 
