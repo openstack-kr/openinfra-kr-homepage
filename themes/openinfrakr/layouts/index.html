@@ -67,6 +67,9 @@
 	<div class="events-container">
 	  {{ range .Params.events }}
 		<div class="event-box">
+		  {{ if .status }}
+			<span class="event-badge {{ .status | lower }}">{{ .status }}</span>
+		  {{ end }}
 		  <h3>{{ .title }}</h3>
 		  <ul>
 			<li><strong>장소:</strong> {{ .location }}</li>
@@ -119,12 +122,10 @@
 
       <!-- 첫 번째 트윗 박스 -->
       <div class="x-tweet-box">
-        <a class="twitter-timeline"
-           href="https://twitter.com/openinfradev?ref_src=twsrc%5Etfw"
-           data-tweet-limit="5"
-           data-theme="light">
-           Tweets by openinfradev
-        </a>
+        <a class="twitter-timeline" 
+           href="https://twitter.com/OpenStack?ref_src=twsrc%5Etfw">
+           Tweets by OpenStack
+        </a> 
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
 

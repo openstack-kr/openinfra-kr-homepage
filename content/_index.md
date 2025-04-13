@@ -76,16 +76,19 @@ events:
     location: "토즈 강남토즈타워점 (서울특별시 강남구 강남대로84길 24-4)"
     date: "2020.04.17 14:00 (UTC/GMT +9)"
     fee: "5,000 KRW"
+    status: "모집중"
 
   - title: "오픈스택 4월 스터디"
     location: "토즈 강남토즈타워점 (서울특별시 강남구 강남대로84길 24-4)"
     date: "2020.04.17 14:00 (UTC/GMT +9)"
     fee: "5,000 KRW"
+    status: "마감"
 
   - title: "오픈스택 4월 세미나"
     location: "D.CAMP(서울특별시 강남구 선릉로 551 새롬빌딩 3층 디캠프) 6층 다목적홀"
     date: "2020.04.24 16:00 (UTC/GMT +9)"
     fee: "0 KRW"
+    status: "마감"
 
 
 

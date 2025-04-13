@@ -12,17 +12,17 @@ defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
 params:
   sponsors:
-    - name: "NHN"
-      url: "https://nhn.com/"
-      logo: "/images/sponsors/nhn/nhn.png"
+    - name: "NHN Cloud"
+      url: "https://company.nhncloud.com/"
+      logo: "/images/sponsors/nhn/nhn_cloud.png"
 
-    - name: "NHN"
-      url: "https://nhn.com/"
-      logo: "/images/sponsors/nhn/nhn.png"
+    - name: "NHN Dooray"
+      url: "https://dooray.com/main/"
+      logo: "/images/sponsors/nhn/dooray.png"
 
-    - name: "NHN"
+    - name: "OpenSource"
       url: "https://nhn.com/"
-      logo: "/images/sponsors/nhn/nhn.png"
+      logo: "/images/sponsors/opensource/logo.png"
   colors:
     base_bg: '#ffffff'
     base_bg_2: '#f8fafc'
@@ -234,7 +234,7 @@ languages:
         - identifier: mailing
           parent: community-group
           name: Mailing
-          url: mailing
+          url: https://lists.openstack.org/mailman3/lists/openstack-ko.lists.openstack.org/
           weight: 41
           params:
             external: true
@@ -284,10 +284,10 @@ languages:
             external: true
             button: true
         - name: Mailing
-          url: mailing
+          url: https://lists.openstack.org/mailman3/lists/openstack-ko.lists.openstack.org/
           weight: 4
           params:
-            external: false
+            external: true
             button: true
       bottom:
         - name: Terms

@@ -115,6 +115,11 @@ body {
   }
 }
 
+
+/* index 페이지 이벤트 목록 부분 */
+
+/* 상태별 색상 */
+
 .events-container {
     display: flex;
     flex-wrap: wrap;
@@ -129,26 +134,65 @@ body {
 }
 
 .event-box {
-    background: linear-gradient(145deg, #f2f2f2, #ffffff);  /* 부드러운 그라데이션 배경 */
+    position: relative;  /* 뱃지를 절대 위치로 넣기 위해 필요 */
+    background: linear-gradient(145deg, #f2f2f2, #ffffff);
     border: 0.5px solid #ddd;
-    border-radius: 15px;  /* 둥근 모서리 */
-    padding: 25px;  /* 여백을 좀 더 여유있게 */
-    width: calc(50% - 20px); /* 각 항목 너비 50% - 간격 */
+    border-radius: 15px;
+    padding: 25px;
+    width: calc(50% - 20px);
     min-width: 300px;
     box-sizing: border-box;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);  /* 부드러운 그림자 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;  /* 애니메이션 강화 */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     display: flex;
-    flex-direction: column;  /* 내부 요소들을 세로로 정렬 */
-    justify-content: center;  /* 수직 가운데 정렬 */
-    text-align: center;  /* 가로 가운데 정렬 */
-    overflow: hidden;  /* 넘치는 부분 잘리게 */
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* 첫 번째 박스는 전체 너비 */
+.event-box:nth-child(1) {
+    flex: 0 0 100%;
+}
+
+/* 그 외 박스는 50% 너비 */
+.event-box:not(:nth-child(1)) {
+    flex: 0 0 calc(50% - 10px);
+    min-width: 300px;
 }
 
 .event-box:hover {
     transform: translateY(-8px);  /* 부드럽게 위로 올라가게 */
     box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.2);  /* 더 두꺼운 그림자 */
     background-color: #e6e6e6;  /* 호버 시 배경 색 변경 */
+}
+
+/* 상태 뱃지 스타일 */
+.event-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 상태별 색상 */
+.event-badge.진행중 {
+    background-color: #28a745;
+}
+
+.event-badge.마감 {
+    background-color: #dc3545;
+}
+
+.event-badge.모집중 {
+    background-color: #ffc107;
+    color: #333;  /* 노랑 배경엔 어두운 글씨가 더 잘 보여 */
 }
 
 h3 {
@@ -220,8 +264,10 @@ li {
 }
 
 .sponsors-container {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 40px;  /* ✅ 양쪽 여백 확실히 추가 */
+    box-sizing: border-box;
 }
 
 .sponsors-container h2 {
@@ -243,13 +289,14 @@ li {
     width: 140px;
     height: 80px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;      /* ⬅️ 세로 정렬: 가운데 */
+    justify-content: center;  /* ⬅️ 가로 정렬: 가운데 */
     background-color: #fff;
     border-radius: 12px;
-    padding: 15px;
+    padding: 0;                /* ✅ 패딩 제거 (이미지 여백 원인일 수 있음) */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;          /* ✅ 혹시 모를 overflow 방지 */
 }
 
 .sponsor-card:hover {
@@ -261,6 +308,8 @@ li {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    display: block;            /* ✅ 여백 방지 */
+    padding: 5%;
 }
 
 /* Footer */
