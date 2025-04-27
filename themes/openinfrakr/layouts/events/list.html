@@ -1,0 +1,141 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}events-list-page{{ end }}
+{{ define "header_classes" }}header--events{{ end }}
+
+{{ define "main" }}
+    
+    {{ if .Params.hero }}
+        {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+    {{ else }}
+        <div class="section">
+            <div class="contianer">
+                <div class="row">
+                    <div class="col col-lg-12">
+                        <h1>{{ .Title }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+
+<div class="section">
+    <div class="container">
+        <div class="row justify-content-end mb-4">
+            <div class="col-auto">
+                <!-- 상태별 필터 -->
+                <select class="form-select me-2" id="statusSelector" onchange="filterEventsByStatus(this.value)">
+                    <option value="all">전체</option>
+                    <option value="uncoming">진행 예정</option>
+                    <option value="completed">종료됨</option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <!-- 연도별 필터 -->
+                <select class="form-select me-2" id="yearSelector" onchange="filterEnventsByYear(this.value)">
+                    <option value="all">전체 년도</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" id="events_container">
+            {{ $events := .Pages }}
+            {{ $now := now }}
+            {{ range $events }}
+                {{ $endDate := .Date}}
+                {{ if .Params.end_date }}
+                    {{ $endDate = time .Params.end_date}}
+                {{ end }}
+
+                {{ $eventStatus := "completed"}}
+                {{ if gt $endDate $now }}
+                    {{ $eventStatus = "upcoming" }}
+                {{ end }}
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4 event-item" 
+                    data-year="{{ dateFormat "2006" .Date }}"
+                    data-status="{{ $eventStatus }}">
+                    <a href="{{ .Permalink }}" class="event-card-link">
+                        <div class="event-card">
+                            {{ if .Params.thumbnail }}
+                                <div class="event-thumbnail">
+                                    <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+                                </div>
+                            {{ end }}
+                            <div class="event-content">
+                                <h2 class="event-title">{{ .Title }}</h2>
+                                <div class="event-date">
+                                    {{ dateFormat "2006.01.02 15:04" .Date }} (UTC+GMT +9)
+                                </div>
+                                {{ if .Params.location }}
+                                <div class="event-location">
+                                    {{ .Params.location }}
+                                </div>
+                                {{ end }}
+                                <div class="event-status-badge {{ $eventStatus }}">
+                                    {{ if eq $eventStatus "upcoming" }}진행 예정{{ else }}종료됨{{ end }}
+                                </div>
+                                {{ if .Params.fee }}
+                                <div class="event-fee">
+                                    {{ .Params.fee }} KRW
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+<script>
+    // 현재 적용된 필터 상태
+    let currentFilters = {
+        year: 'all',
+        status: 'all'
+    };
+
+    // 연도 필터 함수
+    function filterEnventsByYear(year) {
+        currentFilters.year = year;
+        applyFilters();
+    }
+
+    // 상태별 필터 함수
+    function filterEventsByStatus(status) {
+        currentFilters.status = status;
+        applyFilters();
+    }
+
+    // 모든 필터 적용 함수
+    function applyFilters() {
+        const events = document.querySelectorAll('.event-item')
+        events.forEach(event => {
+            const eventYear = event.getAttribute('data-year');
+            const eventStatus = event.getAttribute('data-status');
+
+            const yearMatch = currentFilters.year === 'all' || eventYear === currentFilters.year;
+            const statusMatch = currentFilters.status === 'all' || eventStatus === currentFilters.status;
+
+            if(yearMatch && statusMatch) {
+                event.style.display = 'block';
+            } else {
+                event.style.display = 'none';
+            }
+        })
+    }
+</script>
+
+{{ end }}

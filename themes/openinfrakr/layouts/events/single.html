@@ -1,0 +1,95 @@
+{{ define "body_classes" }}event-detail-page{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="event-detail-wrapper">
+    <!-- 이벤트 타이틀 -->
+    <div class="event-title-section">
+      <h1>{{ .Title }}</h1>
+    </div>
+    
+    <!-- 수평선 추가 -->
+    <div class="event-separator"></div>
+    
+    <!-- 이벤트 콘텐츠 -->
+    <div class="event-content-section">
+      <div class="row">
+        <!-- 이벤트 이미지 영역 -->
+        <div class="col-md-6">
+          {{ if .Params.registration_url }}
+          <!-- 등록 URL이 있는 경우 이미지에 링크 추가 -->
+          <a href="{{ .Params.registration_url }}" class="event-image-link" title="클릭하여 이벤트 등록 페이지로 이동">
+            <div class="event-image-container">
+              {{ if .Params.image }}
+                <img src="{{ .Params.image | relURL }}" class="img-fluid" alt="{{ .Title }}">
+              {{ else }}
+                <div class="event-empty-image"></div>
+              {{ end }}
+            <div class="event-image-overlay">
+              <span class="event-register-text">등록하기</span>
+            </div>
+          </div>
+          </a>
+          {{ else }}
+          <!-- 등록 URL이 없으면 일반 이미지 표시 -->
+          <div class="event-image-container">
+            {{ if.Params.image}}
+              <img src="{{ .Params.image | relURL }}" class="img-fluid" alt="{{ .Title }}">
+            {{ else }}
+              <div class="event-empty-image"></div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+        
+        <!-- 이벤트 정보 영역 -->
+        <div class="col-md-6">
+          <div class="event-info">
+            <div class="event-date-time">
+              {{ if .Date }}
+                {{ dateFormat "2006 01 02 (Mon)" .Date }}
+                <br>
+                {{ dateFormat "15:04" .Date }} ~ 
+                {{ if.Params.end_date }}
+                  {{ dateFormat "15:04" (time .Params.end_date )}}
+                {{ else }}
+                  {{ dateFormat "15:04" .Date}}
+                {{ end }}
+              {{ end }}
+              <br>
+            </div>
+            
+            <div class="event-location">
+              {{ .Params.location }}
+            </div>
+            <br>
+            <div class="event-summary">
+              {{ .Params.summary | markdownify }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 수평선 추가 -->
+    <div class="event-separator"></div>
+    
+    <!-- 이벤트 설명 영역 -->
+    <div class="event-description">
+      {{ .Content }}
+    </div>
+    
+    <!-- 등록 버튼 영역 -->
+    <div class="event-registration-section">
+      {{ if .Params.registration_url }}
+      <a href="{{ .Params.registration_url }}" class="event-registration-btn">
+        {{ .Params.registration_text | default "등록하기" }}
+      </a>
+      {{ end }}
+    </div>
+    
+    <!-- 수평선 추가 -->
+    <div class="event-separator"></div>
+  </div>
+</div>
+{{ end }}

@@ -1,7 +1,7 @@
 ---
 title: "Hall of Fame"
 description: "명예의 전당 페이지"
-url: "hall-of-fame"
+url: "about/hall-of-fame"
 
 header_transparent: true
 
