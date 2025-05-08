@@ -25,15 +25,15 @@
               {{ else }}
                 <div class="event-empty-image"></div>
               {{ end }}
-            <div class="event-image-overlay">
-              <span class="event-register-text">등록하기</span>
+              <div class="event-image-overlay">
+                <span class="event-register-text">등록하기</span>
+              </div>
             </div>
-          </div>
           </a>
           {{ else }}
           <!-- 등록 URL이 없으면 일반 이미지 표시 -->
           <div class="event-image-container">
-            {{ if.Params.image}}
+            {{ if .Params.image}}
               <img src="{{ .Params.image | relURL }}" class="img-fluid" alt="{{ .Title }}">
             {{ else }}
               <div class="event-empty-image"></div>
@@ -50,7 +50,7 @@
                 {{ dateFormat "2006 01 02 (Mon)" .Date }}
                 <br>
                 {{ dateFormat "15:04" .Date }} ~ 
-                {{ if.Params.end_date }}
+                {{ if .Params.end_date }}
                   {{ dateFormat "15:04" (time .Params.end_date )}}
                 {{ else }}
                   {{ dateFormat "15:04" .Date}}

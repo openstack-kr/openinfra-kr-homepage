@@ -1,0 +1,135 @@
+.events-list-page {
+  .event-card {
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .event-thumbnail {
+      height: 200px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 5px;
+      }
+    }
+    
+    .event-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    
+    .event-title {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    
+    .event-date {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      color: #666;
+    }
+    
+    .event-location {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+      color: #666;
+    }
+    
+    .event-fee {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: auto;
+    }
+  }
+  
+  .event-sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 4px;
+    
+    h3 {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eaeaea;
+    }
+    
+    .event-info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin-bottom: 12px;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  .event-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+  
+    &:hover, &:focus {
+      text-decoration: none;
+      color: inherit;
+      outline: none;
+    }
+  
+    .event-card {
+      height: 100%;
+    }
+  }
+  
+  #statusSelector, #yearSelector {
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    background-color: transparent;
+    cursor: pointer;
+
+    option {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+
+  // 필터 스타일
+  .event-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+
+    &.upcoming {
+      background-color: #28a745;
+      color: white;
+    }
+
+    &.completed {
+      background-color: #6c757d;
+      color: white;
+    }
+  }
+}

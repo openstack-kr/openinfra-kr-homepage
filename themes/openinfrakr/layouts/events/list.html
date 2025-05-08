@@ -8,7 +8,7 @@
         {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
     {{ else }}
         <div class="section">
-            <div class="contianer">
+            <div class="container">
                 <div class="row">
                     <div class="col col-lg-12">
                         <h1>{{ .Title }}</h1>
@@ -25,13 +25,13 @@
                 <!-- 상태별 필터 -->
                 <select class="form-select me-2" id="statusSelector" onchange="filterEventsByStatus(this.value)">
                     <option value="all">전체</option>
-                    <option value="uncoming">진행 예정</option>
+                    <option value="upcoming">진행 예정</option>
                     <option value="completed">종료됨</option>
                 </select>
             </div>
             <div class="col-auto">
                 <!-- 연도별 필터 -->
-                <select class="form-select me-2" id="yearSelector" onchange="filterEnventsByYear(this.value)">
+                <select class="form-select me-2" id="yearSelector" onchange="filterEventsByYear(this.value)">
                     <option value="all">전체 년도</option>
                     <option value="2025">2025</option>
                     <option value="2024">2024</option>
