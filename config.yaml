@@ -10,6 +10,7 @@ pygmentsUseClasses: true
 metaDataFormat: yaml
 defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
+buildFuture: true
 params:
   sponsors:
     - name: "NHN Cloud"
@@ -30,8 +31,8 @@ params:
     base_text: '#202020'
     base_text_2: '#4b5563'
     primary_bg: '#000000'
-    primary_bg_2: '#424ff8'
-    primary_bg_3: '#ed1844'
+    primary_bg_2: '#393939'
+    primary_bg_3: '#393939'
     primary_text: '#fdfcf9'
     header_text: '#2b3af7'
     logo_text: '#2b3af7'
@@ -40,9 +41,9 @@ params:
     base_bg_3_dark: '#232323'
     base_text_dark: '#ffffff'
     base_text_2_dark: '#d7d7d7'
-    primary_bg_dark: '#2b3af7'
-    primary_bg_2_dark: '#424ff8'
-    primary_bg_3_dark: '#702bf7'
+    primary_bg_dark: '#000000'
+    primary_bg_2_dark: '#393939'
+    primary_bg_3_dark: '#393939'
     primary_text_dark: '#fdfcf9'
     logo_text_dark: '#ffffff'
     header_text_dark: '#ffffff'
@@ -70,7 +71,7 @@ params:
     show_logo_text_on_desktop: false
   header:
     fixed: true
-    header_height: 60px
+    header_height: 100px
     header_menu_font_size: 18px
   open_graph:
     og_type: website
@@ -127,7 +128,7 @@ params:
   bottom:
     enabled: true
     enable_bottom_menu: true
-    copyright_text: © 2024 OpenInfra Korea Group All Rights Reserved
+    copyright_text: © 2025 OpenInfra Korea Group All Rights Reserved
     show_rss_icon: false
 languages:
   en:
@@ -193,6 +194,7 @@ languages:
         - name: Privacy
           url: privacy
           weight: 2
+
   ko:
     weight: 0
     languageName: 한국어
@@ -225,6 +227,10 @@ languages:
           name: 커뮤니티 소개
           url: about
           weight: 21
+        - identifier: event
+          name: 이벤트
+          weight: 3
+          url: events
         - identifier: community-group
           name: Community
           weight: 4
