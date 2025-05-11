@@ -165,6 +165,10 @@ languages:
           name: Hall of Fame
           url: hall-of-fame
           weight: 71
+        - name: Notice
+          identifier: notice
+          url: notice
+          weight: 8
       footer_primary:
         - name: About
           url: about
@@ -260,6 +264,10 @@ languages:
           name: 명예의 전당
           url: hall-of-fame
           weight: 71
+        - name: 공지사항
+          identifier: notice
+          url: notice
+          weight: 8
       footer_primary:
         - name: About
           url: about

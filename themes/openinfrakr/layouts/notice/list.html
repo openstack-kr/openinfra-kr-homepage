@@ -1,0 +1,153 @@
+{{ define "main" }}
+
+<div class="notice-page">
+  {{ if eq .Kind "list" }}
+    <link rel="stylesheet" href="/css/notice.css">
+  {{ else }}
+    <link rel="stylesheet" href="/css/style.css">
+  {{ end }}
+
+  <!-- Hero Section -->
+  {{ if .Params.hero }}
+  <section class="relative w-full" style="background-image: url('{{ .Params.hero.background.background_image }}'); background-position: top center; background-size: cover; height: 250px;">
+    
+    <!-- Gradient Overlay if enabled -->
+    {{ if .Params.hero.background.background_gradient }}
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50"></div>
+    {{ end }}
+
+    <div class="notice-hero container mx-auto px-4 py-8">
+      <div class="flex flex-col justify-center items-center">
+        <h1>{{ .Params.hero.headings.heading }}</h1>
+        <p>{{ .Params.hero.headings.sub_heading }}</p>
+      </div>
+    </div>
+    
+    <!-- <div class="notice-hero container mx-auto px-4 py-8">
+      <div class="flex flex-col justify-center items-center text-center text-white">
+        <h1 class="text-4xl font-bold mb-2 font-sans tracking-tight">{{ .Params.hero.headings.heading }}</h1>
+        <p class="text-base font-sans tracking-wide">{{ .Params.hero.headings.sub_heading }}</p>
+      </div>
+    </div> -->
+    
+    <!-- Blend Mode for Background Image if set -->
+    {{ if eq .Params.hero.background.background_image_blend_mode "overlay" }}
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+    {{ end }}
+    </section>
+  {{ end }}
+
+  <!-- Filter Section -->
+  <section class="notice-filter-section">
+    <div class="notice-filter-container">
+      <div class="notice-filter-wrapper">
+        <!-- 카테고리 & 정렬 셀렉트 박스 -->
+        <div class="notice-filter-selects">
+          <select class="notice-select">
+            <option value="all">전체 카테고리</option>
+            <option value="event">이벤트</option>
+            <option value="meetup">밋업</option>
+            <option value="project">프로젝트</option>
+            <option value="community">커뮤니티</option>
+            <option value="membership">멤버십</option>
+            <option value="education">교육</option>
+          </select>
+          <select class="notice-select">
+            <option value="latest">최신순</option>
+            <option value="oldest">오래된순</option>
+            <option value="important">중요공지순</option>
+          </select>
+        </div>
+        <!-- 검색 입력창 -->
+        <div class="notice-search-wrapper">
+          <!-- 돋보기 아이콘 -->
+          <svg class="notice-search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7 7 0 1010.65 5.65a7 7 0 006 11.05z" />
+          </svg>
+
+          <!-- 검색 입력 필드 -->
+          <input
+            type="text"
+            id="search-input"
+            placeholder="공지사항 검색"
+            class="notice-search-input"
+            onkeyup="searchNotices()" 
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notices List Section -->
+  <section class="notice-list py-10">
+    <div class="container mx-auto px-4">
+      <div class="space-y-4">
+        {{ range .Data.Pages }}
+          <a href="{{ .Permalink }}" class="block">
+            <div class="notice-item">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+                <div class="flex items-center gap-2 mb-2 md:mb-0">
+                  {{if .Params.category}}
+                    {{ if reflect.IsSlice .Params.category }}  
+                      {{ range .Params.category }}
+                        <span class="notice-tag">{{ . }}</span>
+                      {{ end }}
+                    {{ else }}
+                      <span class="notice-tag">{{ .Params.category }}</span>
+                    {{end}}
+                  {{else}}
+                    <span class="notice-tag">카테고리 없음</span>
+                  {{end}}
+
+                  {{ if eq .Params.important "true" }}
+                    <span class="notice-tag-important">중요</span>
+                  {{ end }}
+                </div>
+                <div class="flex items-center text-sm text-black">
+                  {{ .Date.Format "2006-01-02" }}
+                </div>
+              </div>
+              <h2 class="text-lg font-bold mb-1 text-black mb-1">{{ .Title }}</h2>
+              <p class="text-sm text-black mb-2">{{ .Summary }}</p>
+              <div class="flex justify-end">
+                <span class="text-sm text-black flex items-center">자세히 보기</span>
+              </div>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+      
+      <!-- Pagination -->
+      <div class="notice-pagination">
+        <nav>
+          <button class="btn btn-icon" >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="btn btn-active">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn btn-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-6">중요 공지사항을 놓치지 마세요</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-8">OpenInfra Korea의 뉴스레터를 구독하시면 중요 공지사항과 이벤트 정보를 이메일로 받아보실 수 있습니다.</p>
+      <div class="flex flex-col sm:flex-row gap-2 justify-center max-w-md mx-auto">
+        <input type="email" placeholder="이메일 주소" class="w-full sm:flex-1" />
+        <button class="btn">구독하기</button>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

@@ -1,0 +1,13 @@
+- id: 1
+  title: "OpenInfra Days Korea 2024 발표자 모집 안내"
+  category: "이벤트"
+  date: "2024-05-15"
+  summary: "OpenInfra Days Korea 2024 컨퍼런스의 발표자를 모집합니다."
+  important: true
+- id: 2
+  title: "2024년 6월 정기 밋업 안내"
+  category: "밋업"
+  date: "2024-05-20"
+  summary: "6월 정기 밋업이 6월 15일 토요일에 개최됩니다."
+  important: false
+# 다른 공지사항 데이터 추가...
