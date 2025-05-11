@@ -1,70 +1,32 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-
-    --primary: 0 72.2% 50.6%;
-    --primary-foreground: 0 85.7% 97.3%;
-
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 72.2% 50.6%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-
-    --primary: 0 72.2% 50.6%;
-    --primary-foreground: 0 85.7% 97.3%;
-
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 72.2% 50.6%;
-  }
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --primary: #e11d48;
+  --secondary: #f5f5f5;
+  --radius: 0.5rem;
 }
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
 
 @layer base {
   * {
@@ -212,13 +174,13 @@
   background-color: #ffffff; /* bg-white */
 }
 
-.notice-list-container {
+/* .notice-list-container {
   max-width: 1200px; /* container의 기본 최대 너비 */
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
-  padding-right: 1rem;
-}
+  padding-right: 1rem; 
+} */ 
 
 /* .notice-list {
   @apply py-8 bg-white;
@@ -226,20 +188,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 .notice-list {
   font-family: 'Inter', sans-serif;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.notice-list {
-  margin-top: 1.5rem; /* space-y-6 */
+.notice-list .space-y-4 {
+  position: relative;
+  min-height: 200px;
 }
 
-/* .notice-item {
-  @apply border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white;
-} */
 .notice-item {
-  border: 1px solid #e5e7eb; /* 기본 테두리 색상 */
-  border-radius: 0.5rem; /* rounded-lg */
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
   padding: 1.5rem;
-  transition: box-shadow 0.3s ease; /* transition-shadow */
+  transition: box-shadow 0.3s ease;
+  background-color: white;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .notice-item:hover {
@@ -296,6 +265,19 @@
     font-weight: bold;
     font-size: 14px;
     display: inline-block;
+}
+
+.notice-date {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #6b7280; 
+}
+
+.notice-date-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.25rem;
 }
 
 .notice-pagination {
@@ -357,4 +339,18 @@
 
 .notice-pagination .rotate-180 {
   transform: rotate(180deg);
+}
+
+.notice-pagination .btn-icon.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f3f4f6;
+}
+
+.notice-pagination .btn-icon.disabled:hover {
+  background-color: #f3f4f6;
+}
+
+.notice-pagination .btn-icon.disabled svg {
+  stroke: #9ca3af;
 }
