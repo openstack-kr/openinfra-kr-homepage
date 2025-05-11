@@ -24,41 +24,53 @@ hero:
     background_image_blend_mode: "soft-light"
     background_gradient: true
 
-intro:
+intro_1:
   enabled: true
   align: left
-  image: "/images/photos/about/community.svg"
-  heading: "온라인 교류 및 필요한 자료 찾기"
-  description: "포럼, 페이스북 그룹, IRC 등 다양한 채널에서 커뮤니티 사람들과 교류하고, 위키나 오픈스택 문서 홈페이지에서 필요한 자료를 찾아보세요."
-  buttons:
-    - button:
-      text: "포럼 (Discourse)"
-      url: "https://forum.openinfra-kr.org/"
-      external: false
-      fa_icon: ""
-      size: large
-      outline: false
-      style: "primary"
-    - button:
-      text: "페이스북 그룹"
-      url: "https://fb.com/groups/openstack-kr"
-      external: false
-      fa_icon: ""
-      size: large
-      outline: false
-      style: "primary"
-    - button:
-      text: "위키"
-      url: "https://wiki.openstack.org/wiki/Korea"
-      external: false
-      fa_icon: ""
-      size: large
-      outline: false
-      style: "primary"
+  image: "/images/photos/about/openstack.svg"
+  heading: "OpenStack"
+  description: "OpenStack은 클라우드 인프라를 구축하고 관리할 수 있는 오픈소스 플랫폼이다. 주로 IaaS(Infrastructure as a Service) 환경을 제공하며, 가상 머신(VM), 스토리지, 네트워크 등의 클라우드 리소스를 효율적으로 관리할 수 있도록 설계되었다."
 
+
+intro_2:
+  enabled: true
+  align: right
+  image: "/images/photos/about/openinfra.svg"
+  heading: "Open Infrastructure"
+  description: "Open Infrastructure는 오픈소스 기술을 기반으로 한 클라우드 인프라스트럭처를 의미합니다. 이는 데이터 센터, 클라우드 서비스, 네트워크 및 스토리지와 같은 다양한 IT 자원을 개방형 표준과 오픈소스 기술을 사용하여 구축하고 관리하는 접근 방식을 뜻합니다. Open Infrastructure는 유연성, 확장성, 비용 효율성 등을 제공하면서도, 기업들이 독립적으로 자신만의 클라우드 인프라를 구축할 수 있도록 돕습니다.
+
+이 개념은 일반적으로 오픈소스 클라우드 인프라 프로젝트와 관련이 있으며, 대표적인 예로 OpenStack, Kubernetes, Ceph, Terraform 등이 있습니다."
+
+intro_3:
+  enabled: true
+  align: center
+  image_left: "/images/photos/about/seminar.png"
+  image_right: "/images/photos/about/seminar.png"
+  heading: "OpenStack Korea User Group"
+
+members:
+  - name: "홍길동"
+    position: "회장"
+    image: "/images/members/lys.png"
+    description: "홍길동은 오픈 인프라 커뮤니티의 회장으로서, 다양한 오픈소스 프로젝트에 기여하고 있으며, 클라우드 기술에 대한 깊은 이해를 바탕으로 커뮤니티를 이끌어가고 있습니다."
+  - name: "김철수"
+    position: "부회장"
+    image: "/images/members/lys.png"
+    description: "김철수는 클라우드 인프라 전문가로, 여러 기업과 협력하여 오픈스택 기반의 클라우드 환경을 구축해왔습니다."
+  - name: "이영희"
+    position: "정회원"
+    image: "/images/members/lys.png"
+    description: "이영희는 Kubernetes와 DevOps 전문가로, 커뮤니티 내에서 다양한 기술 세미나와 워크샵을 주도하고 있습니다."
+  - name: "홍길동"
+    position: "회장"
+    image: "/images/members/lys.png"
+    description: "홍길동은 오픈 인프라 커뮤니티의 회장으로서, 다양한 오픈소스 프로젝트에 기여하고 있으며, 클라우드 기술에 대한 깊은 이해를 바탕으로 커뮤니티를 이끌어가고 있습니다."
+  - name: "김철수"
+    position: "부회장"
+    image: "/images/members/lys.png"
+    description: "김철수는 클라우드 인프라 전문가로, 여러 기업과 협력하여 오픈스택 기반의 클라우드 환경을 구축해왔습니다."
+  - name: "김철수"
+    position: "부회장"
+    image: "/images/members/lys.png"
+    description: "김철수는 클라우드 인프라 전문가로, 여러 기업과 협력하여 오픈스택 기반의 클라우드 환경을 구축해왔습니다."
 ---
-
-# 다양한 네트워킹, 교류 및 연구/개발 활동
-
-또한 오픈 인프라 한국 사용자 모임은 세미나, 워크샵 및 컨퍼런스, 국내/해외 오픈소스/IT 커뮤니티 교류, 스터디, 오픈소스 기여 활동 등 오픈스택 및 오픈 인프라 관련 오픈 소스 기술에 대한 다양한 활동을 하고 있습니다. 온라인에서의 활동을 넘어 사람들과 만나 교류하고 경험을 공유 해 보세요.
-
