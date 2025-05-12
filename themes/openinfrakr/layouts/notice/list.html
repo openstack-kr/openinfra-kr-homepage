@@ -63,7 +63,7 @@
     </div>
   </section>
 
-  <!--JavaScript-->
+  <!--JavaScript : 카테고리 설정-->
   <script>
     function filterNotices() {
       const selectedCategory = document.getElementById('category-select').value;
@@ -78,6 +78,47 @@
           notice.parentElement.style.display = 'none'; // <a>를 숨김
         }
       });
+    }
+    </script>
+  
+  <!--Javascript : 정렬 설정-->
+  <script>
+    function sortNotices() {
+      const sortOption = document.getElementById('sort-select').value;
+      const container = document.querySelector('.notice-list .space-y-4');
+      const noticeLinks = Array.from(container.querySelectorAll('a')); // <a> 태그를 기준으로 이동
+    
+      let sorted = [];
+    
+      if (sortOption === 'latest') {
+        sorted = noticeLinks.sort((a, b) => {
+          const dateA = new Date(a.querySelector('.notice-item').getAttribute('data-date'));
+          const dateB = new Date(b.querySelector('.notice-item').getAttribute('data-date'));
+          return dateB - dateA; // 최신순
+        });
+      } else if (sortOption === 'oldest') {
+        sorted = noticeLinks.sort((a, b) => {
+          const dateA = new Date(a.querySelector('.notice-item').getAttribute('data-date'));
+          const dateB = new Date(b.querySelector('.notice-item').getAttribute('data-date'));
+          return dateA - dateB; // 오래된순
+        });
+      } else if (sortOption === 'important') {
+        sorted = noticeLinks.sort((a, b) => {
+          const impA = a.querySelector('.notice-item').getAttribute('data-important') === 'true' ? 1 : 0;
+          const impB = b.querySelector('.notice-item').getAttribute('data-important') === 'true' ? 1 : 0;
+    
+          if (impA === impB) {
+            // 중요도가 같으면 날짜순 정렬
+            const dateA = new Date(a.querySelector('.notice-item').getAttribute('data-date'));
+            const dateB = new Date(b.querySelector('.notice-item').getAttribute('data-date'));
+            return dateB - dateA; // 최신순
+          }
+          return impB - impA; // 중요공지 먼저
+        });
+      }
+    
+      // 기존 노드 제거 후 다시 추가
+      sorted.forEach(item => container.appendChild(item));
     }
     </script>
     
