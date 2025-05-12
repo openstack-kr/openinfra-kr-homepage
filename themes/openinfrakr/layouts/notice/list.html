@@ -121,6 +121,27 @@
       sorted.forEach(item => container.appendChild(item));
     }
     </script>
+  
+  <!--JS : 검색 기능 설정-->
+  <script>
+    function searchNotices() {
+      const searchKeyword = document.getElementById('search-input').value.toLowerCase().trim();
+      const notices = document.querySelectorAll('.notice-item');
+    
+      notices.forEach(notice => {
+        const title = notice.querySelector('h2')?.textContent.toLowerCase() || '';
+        const summary = notice.querySelector('p')?.textContent.toLowerCase() || '';
+    
+        const match = title.includes(searchKeyword) || summary.includes(searchKeyword);
+    
+        if (match || searchKeyword === '') {
+          notice.parentElement.style.display = 'block'; // <a>를 보이게
+        } else {
+          notice.parentElement.style.display = 'none'; // <a>를 숨김
+        }
+      });
+    }
+    </script>
     
 
   <!-- Notices List Section -->
