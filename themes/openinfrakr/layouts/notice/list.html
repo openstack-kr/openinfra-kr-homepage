@@ -63,6 +63,25 @@
     </div>
   </section>
 
+  <!--JavaScript-->
+  <script>
+    function filterNotices() {
+      const selectedCategory = document.getElementById('category-select').value;
+      const notices = document.querySelectorAll('.notice-item');
+    
+      notices.forEach(notice => {
+        const category = notice.getAttribute('data-category');
+    
+        if (selectedCategory === 'all' || category === selectedCategory) {
+          notice.parentElement.style.display = 'block'; // <a>를 보이게
+        } else {
+          notice.parentElement.style.display = 'none'; // <a>를 숨김
+        }
+      });
+    }
+    </script>
+    
+
   <!-- Notices List Section -->
   <section class="notice-list py-4">
     <div class="container mx-auto">
