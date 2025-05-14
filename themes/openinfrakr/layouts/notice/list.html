@@ -8,7 +8,23 @@
 
   <!-- Hero Section -->
   {{ if .Params.hero }}
-  <section class="relative w-full" style="background-image: url('{{ .Params.hero.background.background_image }}'); background-position: top center; background-size: cover; height: 250px;">
+  <!-- <section class="relative w-full" style="background-image: url('{{ .Params.hero.background.background_image }}'); background-position: top center; background-size: cover; height: 250px;"> -->
+  {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+  {{ else }}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                {{ if .Params.image }}
+                    <div class="col col-lg-12" >
+                        <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
     
     <!-- Gradient Overlay if enabled -->
     {{ if .Params.hero.background.background_gradient }}
