@@ -212,6 +212,64 @@
     </div>
   </section>
 
+  <!--Javascript : Pagination-->
+  <script>
+    const noticesPerPage = 10;
+    let currentPage = 1;
+    
+    function showPage(page) {
+      const noticeLinks = Array.from(document.querySelectorAll('.notice-item')).map(el => el.parentElement); // <a> 기준
+      const totalNotices = noticeLinks.length;
+      const totalPages = Math.ceil(totalNotices / noticesPerPage);
+      currentPage = Math.max(1, Math.min(page, totalPages)); // 범위 제한
+    
+      // 모두 숨기기
+      noticeLinks.forEach(link => link.style.display = 'none');
+    
+      // 현재 페이지에 해당하는 공지만 표시
+      const start = (currentPage - 1) * noticesPerPage;
+      const end = start + noticesPerPage;
+      noticeLinks.slice(start, end).forEach(link => {
+        link.style.display = 'block';
+      });
+    
+      renderPagination(totalPages);
+    }
+    
+    function renderPagination(totalPages) {
+      const paginationContainer = document.querySelector('.notice-pagination nav');
+      paginationContainer.innerHTML = '';
+    
+      // 이전 버튼
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'btn btn-icon';
+      prevBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>`;
+      prevBtn.onclick = () => showPage(currentPage - 1);
+      paginationContainer.appendChild(prevBtn);
+    
+      // 페이지 번호 버튼 
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = 'btn' + (i === currentPage ? ' btn-active' : '');
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => showPage(i);
+        paginationContainer.appendChild(pageBtn);
+      }
+    
+      // 다음 버튼
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'btn btn-icon';
+      nextBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>`;
+      nextBtn.onclick = () => showPage(currentPage + 1);
+      paginationContainer.appendChild(nextBtn);
+    }
+    
+    // 페이지 로드 시 첫 페이지 보여주기
+    document.addEventListener('DOMContentLoaded', () => {
+      showPage(1);
+    });
+    </script>    
+
   <!-- Subscribe Section -->
   <section class="py-12 bg-gray-50">
     <div class="container mx-auto px-4 text-center">
