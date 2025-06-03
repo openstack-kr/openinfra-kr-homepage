@@ -189,8 +189,16 @@ body {
 .event-badge.마감 {
     background-color: #dc3545;
 }
+.event-badge.closed {
+    background-color: #dc3545;
+}
 
 .event-badge.모집중 {
+    background-color: #ffc107;
+    color: #333;  /* 노랑 배경엔 어두운 글씨가 더 잘 보여 */
+}
+
+.event-badge.open {
     background-color: #ffc107;
     color: #333;  /* 노랑 배경엔 어두운 글씨가 더 잘 보여 */
 }

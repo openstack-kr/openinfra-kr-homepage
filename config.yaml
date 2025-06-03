@@ -143,29 +143,55 @@ languages:
         - identifier: about-group
           name: About
           weight: 2
+          url: about
         - identifier: about
           parent: about-group
           name: About
           url: about
           weight: 21
+        - identifier: event
+          name: event
+          weight: 3
+          url: events
         - identifier: community-group
           name: Community
           weight: 4
         - identifier: forum
           parent: community-group
-          name: Forum (Korean)
+          name: Forum
           url: https://forum.openinfra-kr.org
           weight: 41
           params:
             external: true
-        - identifier: hall-of-fame-group
-          name: Hall of Fame
-          weight: 7
-        - identifier: hall-of-fame
-          parent: hall-of-fame-group
-          name: Hall of Fame
-          url: hall-of-fame
-          weight: 71
+        - identifier: mailing
+          parent: community-group
+          name: Mailing
+          url: https://lists.openstack.org/mailman3/lists/openstack-ko.lists.openstack.org/
+          weight: 41
+          params:
+            external: true
+        - identifier: facebook
+          parent: community-group
+          name: Facebook
+          url: https://www.facebook.com/groups/openstack.kr
+          weight: 41
+          params:
+            external: true
+        - identifier: discord
+          parent: community-group
+          name: Discord
+          url: https://discord.gg/vCM6Qj8uKB
+          weight: 41
+          params:
+            external: true
+        #- identifier: hall-of-fame-group
+        #  name: Hall of Fame
+        #  weight: 7
+        #- identifier: hall-of-fame
+        #  parent: hall-of-fame-group
+        #  name: Hall of Fame
+        #  url: hall-of-fame
+        #  weight: 71
         - name: Notice
           identifier: notice
           url: notice
@@ -181,9 +207,21 @@ languages:
           params:
             external: true
             button: true
-        - name: OpenInfra Korea Event
-          url: https://www.openinfradays.kr
+        - name: Discord
+          url: https://discord.gg/vCM6Qj8uKB
           weight: 2
+          params:
+            external: true
+            button: true
+        - name: Facebook
+          url: https://www.facebook.com/groups/openstack.kr
+          weight: 3
+          params:
+            external: true
+            button: true
+        - name: Mailing
+          url: https://lists.openstack.org/mailman3/lists/openstack-ko.lists.openstack.org/
+          weight: 4
           params:
             external: true
             button: true
@@ -222,6 +260,7 @@ languages:
         - identifier: about-group
           name: 소개
           weight: 2
+          url: about
         - identifier: about
           parent: about-group
           name: 커뮤니티 소개
@@ -262,14 +301,14 @@ languages:
           weight: 41
           params:
             external: true
-        - identifier: hall-of-fame-group
-          name: 명예의 전당
-          weight: 7
-        - identifier: hall-of-fame
-          parent: hall-of-fame-group
-          name: 명예의 전당
-          url: hall-of-fame
-          weight: 71
+        #- identifier: hall-of-fame-group
+        #  name: 명예의 전당
+        #  weight: 7
+        #- identifier: hall-of-fame
+        #  parent: hall-of-fame-group
+        #  name: 명예의 전당
+        #  url: hall-of-fame
+        #  weight: 71
         - name: 공지사항
           identifier: notice
           url: notice
