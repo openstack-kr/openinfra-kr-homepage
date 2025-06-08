@@ -9,7 +9,5 @@ location: "서울 코엑스"
 fee: 25000
 registration_url: "https://event.openstack.or.kr/2017/"
 summary: >
-    오픈스택 한국 커뮤니티에서 오는 7월 13일과 14일 양일간 OpenStack Next : Embracing the Cloud Universe라는 주제로 OpenStack Days Korea를 개최합니다.
-    
-    OpenStack Days는 OpenStack Foundation에서 주관하는 공식 글로벌 행사이며, 전 세계 많은 나라에서 개최되고 있습니다.
+    The OpenStack Korea Community is hosting OpenStack Days Korea on July 13-14 with the theme "OpenStack Next: Embracing the Cloud Universe". OpenStack Days is an official global event organized by the OpenStack Foundation and is held in many countries around the world.
 ---

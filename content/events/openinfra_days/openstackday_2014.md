@@ -1,7 +1,7 @@
 ---
 title: "OpenStack Day in Korea 2014"
 date: 2014-02-18T09:30:00+09:00
-end_date: 2024-02-18T18:00:00+09:00
+end_date: 2014-02-18T18:00:00+09:00
 draft: false
 thumbnail: "images/photos/event/2014_openstackday_logo.png"
 image: "images/photos/event/2014_openstackday_logo.png"

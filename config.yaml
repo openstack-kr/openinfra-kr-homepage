@@ -150,7 +150,7 @@ languages:
           url: about
           weight: 21
         - identifier: event
-          name: event
+          name: Events
           weight: 3
           url: events
         - identifier: community-group
