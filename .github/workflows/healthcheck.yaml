@@ -1,0 +1,25 @@
+name: Web Health Check
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # 매 10분마다 실행
+  workflow_dispatch:        # 수동 실행도 허용
+
+jobs:
+  healthcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check website health
+        run: |
+          URL="https://forum.openinfra-kr.org"
+          echo "Checking $URL ..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" $URL)
+
+          if [ "$HTTP_STATUS" -ne 200 ]; then
+            echo "Health check failed! Status code: $HTTP_STATUS"
+            exit 1
+          fi
+
+          echo "Health check passed! Status code: $HTTP_STATUS"
+
