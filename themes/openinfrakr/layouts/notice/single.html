@@ -1,0 +1,114 @@
+{{ define "main" }}
+<div class="notice-page">
+  <!-- Link to external CSS file moved to <head> -->
+  {{ if eq .Section "notice" }}
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/notice.css">
+  {{ end }}
+
+  {{ $section := site.GetPage "section" .Section }}
+  {{ $hero := .Params.hero }}
+  {{ if not $hero }}
+    {{ $hero = $section.Params.hero }}
+  {{ end }}
+
+  <!-- Hero Section -->
+  {{ if $hero }}
+    {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" $hero) }}
+  {{ else }}
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-12">
+            <h1>{{ $section.Title }}</h1>
+          </div>
+          {{ if .Params.image }}
+            <div class="col col-lg-12">
+              <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+
+  
+  <!-- Notice Detail Section -->
+  <section class="notice-detail-section">
+    <div class="container-wrapper">
+      <div class="content-wrapper">
+
+        <!-- Navigation -->
+        <div class="nav-back">
+          <!-- <a href="/notice" class="back-link text-black" style="display: flex; align-items: center; gap: 0.5rem; color: black; text-decoration: none;" > -->
+          <a href="/notice" class="back-link" >
+            <!-- <i class="fas fa-arrow-left"></i> 공지사항 목록으로 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            공지사항 목록으로
+          </a>
+        </div>
+      
+      <!-- Notice Header -->
+      <div class="mb-8 pb-2 border-b">
+         <!-- 카테고리 & 중요 뱃지 -->
+         <div class="flex flex-wrap gap-1 mb-2 items-center" >
+          {{if .Params.category}}
+            {{ if reflect.IsSlice .Params.category }}  
+              {{ range .Params.category }}
+                <span class="notice-tag">{{ . }}</span>
+              {{ end }}
+            {{ else }}
+              <span class="notice-tag">{{ .Params.category }}</span>
+            {{end}}
+          {{else}}
+            <span class="notice-tag">카테고리 없음</span>
+          {{end}}
+
+          {{ if eq .Params.important "true" }}
+            <span class="notice-tag-important">중요</span>
+          {{ end }}
+        </div>
+        <!-- 제목 -->
+        <h1 class="text-2xl font-bold mb-2">{{ .Title }}</h1>
+         <!--날짜 및 작성자-->
+         <div class="flex items-center text-gray-500 text-base">
+          <svg class="notice-date-icon w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10m-11 4h12M4 5h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2z" />
+          </svg>
+          <span>{{ .Date.Format "2006-01-02" }}</span>
+          <span class="ml-4">작성자: {{ .Params.author }}</span>
+         </div>
+         <div class="flex justify-end mt-1 sm:mt-0 gap-2">
+          <button class="text-gray-500 bg-transparent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-sm px-2 py-1 text-sm flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            공유
+          </button>
+        
+          <button class="text-gray-500 bg-transparent hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 rounded-sm px-2 py-1 text-sm flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9V2h12v7"></path>
+              <rect x="6" y="14" width="12" height="8" rx="2" ry="2"></rect>
+              <path d="M6 18h12"></path>
+              <path d="M9 14v4"></path>
+              <path d="M15 14v4"></path>
+            </svg>
+            인쇄
+          </button>
+        </div>
+      </div>
+      <div class="notice-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+</div> <!-- Closing the .notice-page div -->
+{{ end }}
