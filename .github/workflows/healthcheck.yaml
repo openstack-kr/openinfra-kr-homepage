@@ -23,10 +23,10 @@ jobs:
           FAIL_LIST=""
           for url in $(yq '.urls[]' .github/urls.yaml); do
             echo "Checking $url"
-            code=$(curl -s -o /dev/null -w "%{http_code}" "$url" || echo 000)
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
             if [ "$code" -ne 200 ]; then
               echo "$url is DOWN (status $code)"
-              FAIL_LIST+="$url (HTTP $code)\n"
+              FAIL_LIST+="$url (status code $code)\n"
             else
               echo "$url is OK"
             fi
