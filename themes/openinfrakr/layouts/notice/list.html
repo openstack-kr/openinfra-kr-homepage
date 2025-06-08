@@ -1,15 +1,30 @@
 {{ define "main" }}
-
 <div class="notice-page">
   {{ if eq .Kind "list" }}
     <link rel="stylesheet" href="/css/notice.css">
   {{ else }}
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/notice.css">
   {{ end }}
 
   <!-- Hero Section -->
   {{ if .Params.hero }}
-  <section class="relative w-full" style="background-image: url('{{ .Params.hero.background.background_image }}'); background-position: top center; background-size: cover; height: 250px;">
+  <!-- <section class="relative w-full" style="background-image: url('{{ .Params.hero.background.background_image }}'); background-position: top center; background-size: cover; height: 250px;"> -->
+  {{ partial "framework/sections/hero/hero.html" (dict "context" $ "hero" .Params.hero) }}
+  {{ else }}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                {{ if .Params.image }}
+                    <div class="col col-lg-12" >
+                        <img class="img-fluid" src="{{ .Params.image | relURL }}" />
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
     
     <!-- Gradient Overlay if enabled -->
     {{ if .Params.hero.background.background_gradient }}
@@ -22,13 +37,6 @@
         <p>{{ .Params.hero.headings.sub_heading }}</p>
       </div>
     </div>
-    
-    <!-- <div class="notice-hero container mx-auto px-4 py-8">
-      <div class="flex flex-col justify-center items-center text-center text-white">
-        <h1 class="text-4xl font-bold mb-2 font-sans tracking-tight">{{ .Params.hero.headings.heading }}</h1>
-        <p class="text-base font-sans tracking-wide">{{ .Params.hero.headings.sub_heading }}</p>
-      </div>
-    </div> -->
     
     <!-- Blend Mode for Background Image if set -->
     {{ if eq .Params.hero.background.background_image_blend_mode "overlay" }}
@@ -43,16 +51,16 @@
       <div class="notice-filter-wrapper">
         <!-- 카테고리 & 정렬 셀렉트 박스 -->
         <div class="notice-filter-selects">
-          <select class="notice-select">
+          <select class="notice-select" id="category-select" onchange="filterNotices()">
             <option value="all">전체 카테고리</option>
-            <option value="event">이벤트</option>
-            <option value="meetup">밋업</option>
-            <option value="project">프로젝트</option>
-            <option value="community">커뮤니티</option>
-            <option value="membership">멤버십</option>
-            <option value="education">교육</option>
+            <option value="이벤트">이벤트</option>
+            <option value="밋업">밋업</option>
+            <option value="프로젝트">프로젝트</option>
+            <option value="커뮤니티">커뮤니티</option>
+            <option value="멤버십">멤버십</option>
+            <option value="교육">교육</option>
           </select>
-          <select class="notice-select">
+          <select class="notice-select" id="sort-select" onchange="sortNotices()">
             <option value="latest">최신순</option>
             <option value="oldest">오래된순</option>
             <option value="important">중요공지순</option>
@@ -64,27 +72,105 @@
           <svg class="notice-search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="18" height="18">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35m0 0A7 7 0 1010.65 5.65a7 7 0 006 11.05z" />
           </svg>
-
           <!-- 검색 입력 필드 -->
-          <input
-            type="text"
-            id="search-input"
-            placeholder="공지사항 검색"
-            class="notice-search-input"
-            onkeyup="searchNotices()" 
-          />
+          <input type="text" id="search-input" placeholder="공지사항 검색" class="notice-search-input" onkeyup="searchNotices()" />
         </div>
       </div>
     </div>
   </section>
 
+  <!--JavaScript : 카테고리 설정-->
+  <script>
+    function filterNotices() {
+      const selectedCategory = document.getElementById('category-select').value;
+      const notices = document.querySelectorAll('.notice-item');
+    
+      notices.forEach(notice => {
+        const category = notice.getAttribute('data-category');
+    
+        if (selectedCategory === 'all' || category === selectedCategory) {
+          notice.parentElement.style.display = 'block'; // <a>를 보이게
+        } else {
+          notice.parentElement.style.display = 'none'; // <a>를 숨김
+        }
+      });
+    }
+    </script>
+  
+  <!--Javascript : 정렬 설정-->
+  <script>
+    function sortNotices() {
+      const sortOption = document.getElementById('sort-select').value;
+      const container = document.querySelector('.notice-list .space-y-4');
+      const noticeLinks = Array.from(container.querySelectorAll('a')); // <a> 태그를 기준으로 이동
+    
+      let sorted = [];
+    
+      if (sortOption === 'latest') {
+        sorted = noticeLinks.sort((a, b) => {
+          const dateA = new Date(a.querySelector('.notice-item').getAttribute('data-date'));
+          const dateB = new Date(b.querySelector('.notice-item').getAttribute('data-date'));
+          return dateB - dateA; // 최신순
+        });
+      } else if (sortOption === 'oldest') {
+        sorted = noticeLinks.sort((a, b) => {
+          const dateA = new Date(a.querySelector('.notice-item').getAttribute('data-date'));
+          const dateB = new Date(b.querySelector('.notice-item').getAttribute('data-date'));
+          return dateA - dateB; // 오래된순
+        });
+      } else if (sortOption === 'important') {
+        sorted = noticeLinks.sort((a, b) => {
+          const impA = a.querySelector('.notice-item').getAttribute('data-important') === 'true' ? 1 : 0;
+          const impB = b.querySelector('.notice-item').getAttribute('data-important') === 'true' ? 1 : 0;
+    
+          if (impA === impB) {
+            // 중요도가 같으면 날짜순 정렬
+            const dateA = new Date(a.querySelector('.notice-item').getAttribute('data-date'));
+            const dateB = new Date(b.querySelector('.notice-item').getAttribute('data-date'));
+            return dateB - dateA; // 최신순
+          }
+          return impB - impA; // 중요공지 먼저
+        });
+      }
+    
+      // 기존 노드 제거 후 다시 추가
+      sorted.forEach(item => container.appendChild(item));
+    }
+    </script>
+  
+  <!--JS : 검색 기능 설정-->
+  <script>
+    function searchNotices() {
+      const searchKeyword = document.getElementById('search-input').value.toLowerCase().trim();
+      const notices = document.querySelectorAll('.notice-item');
+    
+      notices.forEach(notice => {
+        const title = notice.querySelector('h2')?.textContent.toLowerCase() || '';
+        const summary = notice.querySelector('p')?.textContent.toLowerCase() || '';
+    
+        const match = title.includes(searchKeyword) || summary.includes(searchKeyword);
+    
+        if (match || searchKeyword === '') {
+          notice.parentElement.style.display = 'block'; // <a>를 보이게
+        } else {
+          notice.parentElement.style.display = 'none'; // <a>를 숨김
+        }
+      });
+    }
+    </script>
+    
+
   <!-- Notices List Section -->
-  <section class="notice-list py-10">
-    <div class="container mx-auto px-4">
-      <div class="space-y-4">
+  <section class="notice-list py-4">
+    <div class="container mx-auto">
+      <div class="space-y-4" style="min-height: 200px;">
         {{ range .Data.Pages }}
           <a href="{{ .Permalink }}" class="block">
-            <div class="notice-item">
+            <div class="notice-item relative"
+              data-category="{{ if reflect.IsSlice .Params.category }}{{ index .Params.category 0 }}{{ else }}{{ .Params.category }}{{ end }}"
+              data-categories="{{ if reflect.IsSlice .Params.categories }}{{ delimit .Params.categories "," }}{{ end }}"
+              data-date="{{ .Date.Format "2006-01-02" }}"
+              data-important="{{ if eq .Params.important "true" }}true{{ else }}false{{ end }}">
               <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                 <div class="flex items-center gap-2 mb-2 md:mb-0">
                   {{if .Params.category}}
@@ -103,8 +189,12 @@
                     <span class="notice-tag-important">중요</span>
                   {{ end }}
                 </div>
-                <div class="flex items-center text-sm text-black">
-                  {{ .Date.Format "2006-01-02" }}
+                <div class="notice-date absolute top-2 right-2 flex items-center gap-1">
+                  <svg class="notice-date-icon w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M8 7V3m8 4V3m-9 8h10m-11 4h12M4 5h16a2 2 0 012 2v14a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2z" />
+                  </svg>
+                  <span>{{ .Date.Format "2006-01-02" }}</span>
                 </div>
               </div>
               <h2 class="text-lg font-bold mb-1 text-black mb-1">{{ .Title }}</h2>
@@ -137,6 +227,64 @@
       </div>
     </div>
   </section>
+
+  <!--Javascript : Pagination-->
+  <script>
+    const noticesPerPage = 10;
+    let currentPage = 1;
+    
+    function showPage(page) {
+      const noticeLinks = Array.from(document.querySelectorAll('.notice-item')).map(el => el.parentElement); // <a> 기준
+      const totalNotices = noticeLinks.length;
+      const totalPages = Math.ceil(totalNotices / noticesPerPage);
+      currentPage = Math.max(1, Math.min(page, totalPages)); // 범위 제한
+    
+      // 모두 숨기기
+      noticeLinks.forEach(link => link.style.display = 'none');
+    
+      // 현재 페이지에 해당하는 공지만 표시
+      const start = (currentPage - 1) * noticesPerPage;
+      const end = start + noticesPerPage;
+      noticeLinks.slice(start, end).forEach(link => {
+        link.style.display = 'block';
+      });
+    
+      renderPagination(totalPages);
+    }
+    
+    function renderPagination(totalPages) {
+      const paginationContainer = document.querySelector('.notice-pagination nav');
+      paginationContainer.innerHTML = '';
+    
+      // 이전 버튼
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'btn btn-icon';
+      prevBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>`;
+      prevBtn.onclick = () => showPage(currentPage - 1);
+      paginationContainer.appendChild(prevBtn);
+    
+      // 페이지 번호 버튼 
+      for (let i = 1; i <= totalPages; i++) {
+        const pageBtn = document.createElement('button');
+        pageBtn.className = 'btn' + (i === currentPage ? ' btn-active' : '');
+        pageBtn.textContent = i;
+        pageBtn.onclick = () => showPage(i);
+        paginationContainer.appendChild(pageBtn);
+      }
+    
+      // 다음 버튼
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'btn btn-icon';
+      nextBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>`;
+      nextBtn.onclick = () => showPage(currentPage + 1);
+      paginationContainer.appendChild(nextBtn);
+    }
+    
+    // 페이지 로드 시 첫 페이지 보여주기
+    document.addEventListener('DOMContentLoaded', () => {
+      showPage(1);
+    });
+    </script>    
 
   <!-- Subscribe Section -->
   <section class="py-12 bg-gray-50">
