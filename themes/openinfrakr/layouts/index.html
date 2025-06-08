@@ -72,9 +72,9 @@
 		  {{ end }}
 		  <h3>{{ .title }}</h3>
 		  <ul>
-			<li><strong>장소:</strong> {{ .location }}</li>
-			<li><strong>일시:</strong> {{ .date }}</li>
-			<li><strong>회비:</strong> {{ .fee }}</li>
+			<li><strong>Location:</strong> {{ .location }}</li>
+			<li><strong>Date & Time:</strong> {{ .date }}</li>
+			<li><strong>Registration Fee:</strong> {{ .fee }}</li>
 		  </ul>
 		</div>
 	  {{ end }}
@@ -118,19 +118,18 @@
     {{ end }}
 
     <!-- X Embedded Timeline -->
+    <!--
     <div class="x-timeline-container" style="display: flex; justify-content: space-between; gap: 20px;">
 
-      <!-- 첫 번째 트윗 박스 -->
       <div class="x-tweet-box">
         <a class="twitter-timeline" href="https://twitter.com/OpenStack?ref_src=twsrc%5Etfw">Tweets by OpenStack</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
 
-      <!-- 두 번째 트윗 박스 -->
       <div class="x-tweet-box">
       </div>
 
     </div>
-
+    -->
     {{ if .Params.blog.enabled }}
         {{ $section := $.Site.GetPage "section" "posts" }}
         {{ $pages := where $.Site.RegularPages "Type" "posts" }}

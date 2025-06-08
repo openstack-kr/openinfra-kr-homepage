@@ -72,21 +72,21 @@ intro_1:
       style: "primary"
 
 events:
-  - title: "오픈스택 한국 커뮤니티 온라인 컨퍼런스"
-    location: "토즈 강남토즈타워점 (서울특별시 강남구 강남대로84길 24-4)"
-    date: "2020.04.17 14:00 (UTC/GMT +9)"
-    fee: "5,000 KRW"
+  - title: "OpenInfra Days Korea 2025 Call for Speakers"
+    location: "양재 AT 센터"
+    date: "2025.06.15 (UTC+GMT +9)"
+    fee: "0 KRW"
     status: "모집중"
 
-  - title: "오픈스택 4월 스터디"
-    location: "토즈 강남토즈타워점 (서울특별시 강남구 강남대로84길 24-4)"
-    date: "2020.04.17 14:00 (UTC/GMT +9)"
-    fee: "5,000 KRW"
+  - title: "OpenInfra Summit Asia 2024"
+    location: "수원 컨벤션 센터"
+    date: "2024.09.03 09:30 (UTC+GMT +9)"
+    fee: "70,000 KRW"
     status: "마감"
 
-  - title: "오픈스택 4월 세미나"
-    location: "D.CAMP(서울특별시 강남구 선릉로 551 새롬빌딩 3층 디캠프) 6층 다목적홀"
-    date: "2020.04.24 16:00 (UTC/GMT +9)"
+  - title: "OpenInfra Community Days Korea 2023"
+    location: "서울 코엑스 그랜드 볼룸 (Seoul, COEX Grandballroom)"
+    date: "2023.07.03 10:00 (UTC+GMT +9)"
     fee: "0 KRW"
     status: "마감"
 
@@ -121,8 +121,7 @@ outro:
   buttons:
     - button:
       text: "시작하기"
-      url: "/"
-      #url: "/contact"
+      url: "https://discord.com/invite/vCM6Qj8uKB"
       external: false
       size: "large"
 

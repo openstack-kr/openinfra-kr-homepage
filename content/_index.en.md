@@ -72,23 +72,24 @@ intro_1:
       style: "primary"
 
 events:
-  - title: "OpenStack Korea Community Online Conference"
-    location: "Toz Gangnam Tower (24-4 Gangnam-daero 84-gil, Gangnam-gu, Seoul)"
-    date: "2020.04.17 14:00 (UTC/GMT +9)"
-    fee: "5,000 KRW"
+  - title: "OpenInfra Days Korea 2025 Call for Speakers"
+    location: "Yangjae AT Center"
+    date: "2025.06.15 (UTC+GMT +9)"
+    fee: "0 KRW"
     status: "Open"
 
-  - title: "OpenStack April Study Session"
-    location: "Toz Gangnam Tower (24-4 Gangnam-daero 84-gil, Gangnam-gu, Seoul)"
-    date: "2020.04.17 14:00 (UTC/GMT +9)"
-    fee: "5,000 KRW"
+  - title: "OpenInfra Summit Asia 2024"
+    location: "Suwon Convention Center"
+    date: "2024.09.03 09:30 (UTC+GMT +9)"
+    fee: "70,000 KRW"
     status: "Closed"
 
-  - title: "OpenStack April Seminar"
-    location: "D.CAMP (3rd floor, Saerom Building, 551 Seolleung-ro, Gangnam-gu, Seoul), 6th floor Multipurpose Hall"
-    date: "2020.04.24 16:00 (UTC/GMT +9)"
+  - title: "OpenInfra Community Days Korea 2023"
+    location: "Seoul COEX Grand Ballroom"
+    date: "2023.07.03 10:00 (UTC+GMT +9)"
     fee: "0 KRW"
     status: "Closed"
+
 
 partners:
   enabled: false
