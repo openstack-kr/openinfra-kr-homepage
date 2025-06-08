@@ -42,8 +42,9 @@ jobs:
       - name: Send Discord Alert if Any Site Fails
         if: env.FAILED == 'true'
         run: |
+          MESSAGE=$(echo -e ":x: Health Check Failed!\n\`\`\`\n${{ steps.healthcheck.outputs.fail_list }}\n\`\`\`")
+          PAYLOAD=$(jq -nc --arg content "$MESSAGE" '{content: $content}')
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"content\":\":x: Health Check Failed!\n\`\`\`\n${{ steps.healthcheck.outputs.fail_list }}\n\`\`\`\"}" \
+               -d "$PAYLOAD" \
                ${{ secrets.DISCORD_WEBHOOK }}
-
