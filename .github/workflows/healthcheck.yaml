@@ -21,7 +21,7 @@ jobs:
         id: healthcheck
         run: |
           FAIL_LIST=""
-          for url in $(yq '.urls[]' urls.yaml); do
+          for url in $(yq '.urls[]' .github/urls.yaml); do
             echo "Checking $url"
             code=$(curl -s -o /dev/null -w "%{http_code}" "$url" || echo 000)
             if [ "$code" -ne 200 ]; then
