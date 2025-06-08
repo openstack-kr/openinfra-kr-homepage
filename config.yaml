@@ -136,6 +136,10 @@ languages:
           name: About
           url: about
           weight: 21
+        - identifier: event
+          name: Events
+          weight: 3
+          url: events
         - identifier: community-group
           name: Community
           weight: 4

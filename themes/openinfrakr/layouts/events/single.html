@@ -26,7 +26,9 @@
                 <div class="event-empty-image"></div>
               {{ end }}
               <div class="event-image-overlay">
-                <span class="event-register-text">등록하기</span>
+                <span class="event-register-text">
+                  {{ if eq $.Site.Language.Lang "ko" }}등록하기{{ else }}REGISTER{{ end }}
+                </span>
               </div>
             </div>
           </a>
@@ -83,7 +85,11 @@
     <div class="event-registration-section">
       {{ if .Params.registration_url }}
       <a href="{{ .Params.registration_url }}" class="event-registration-btn">
-        {{ .Params.registration_text | default "등록하기" }}
+        {{ if .Params.registration_text }}
+          {{ .Params.registration_text }}
+        {{ else }}
+          {{ if eq $.Site.Language.Lang "ko" }}등록하기{{ else }}REGISTER{{ end }}
+        {{ end }}
       </a>
       {{ end }}
     </div>

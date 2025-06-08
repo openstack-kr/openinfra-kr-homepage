@@ -24,15 +24,15 @@
             <div class="col-auto">
                 <!-- 상태별 필터 -->
                 <select class="form-select me-2" id="statusSelector" onchange="filterEventsByStatus(this.value)">
-                    <option value="all">전체</option>
-                    <option value="upcoming">진행 예정</option>
-                    <option value="completed">종료됨</option>
+                    <option value="all">{{ if eq .Site.Language.Lang "ko" }}전체{{ else }}ALL{{ end }}</option>
+                    <option value="upcoming">{{ if eq .Site.Language.Lang "ko" }}진행 예정{{ else }}UPCOMING{{ end }}</option>
+                    <option value="completed">{{ if eq .Site.Language.Lang "ko" }}종료됨{{ else }}COMPLETED{{ end }}</option>
                 </select>
             </div>
             <div class="col-auto">
                 <!-- 연도별 필터 -->
                 <select class="form-select me-2" id="yearSelector" onchange="filterEventsByYear(this.value)">
-                    <option value="all">전체 년도</option>
+                    <option value="all">{{ if eq .Site.Language.Lang "ko" }}전체 년도{{ else }}ALL{{ end }}</option>
                     <option value="2025">2025</option>
                     <option value="2024">2024</option>
                     <option value="2023">2023</option>
@@ -84,7 +84,11 @@
                                 </div>
                                 {{ end }}
                                 <div class="event-status-badge {{ $eventStatus }}">
-                                    {{ if eq $eventStatus "upcoming" }}진행 예정{{ else }}종료됨{{ end }}
+                                    {{ if eq $eventStatus "upcoming" }}
+                                        {{ if eq $.Site.Language.Lang "ko" }}진행 예정{{ else }}UPCOMING{{ end }}
+                                    {{ else }}
+                                        {{ if eq $.Site.Language.Lang "ko" }}종료됨{{ else }}COMPLETED{{ end }}
+                                    {{ end }}
                                 </div>
                                 {{ if .Params.fee }}
                                 <div class="event-fee">
