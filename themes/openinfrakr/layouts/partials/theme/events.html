@@ -1,0 +1,13 @@
+<div class="events-container">
+  {{ range .Site.Data.events.events }}
+    <div class="event-box">
+      <h3>{{ .title }}</h3>
+      <ul>
+        <li><strong>장소:</strong> {{ .location }}</li>
+        <li><strong>일시:</strong> {{ .date }}</li>
+        <li><strong>회비:</strong> {{ .fee }}</li>
+      </ul>
+    </div>
+  {{ end }}
+</div>
+

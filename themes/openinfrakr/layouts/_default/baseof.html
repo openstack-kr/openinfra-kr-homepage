@@ -51,5 +51,9 @@
     {{ partial "framework/analytics/umami-analytics.html" . }}
     {{ partial "framework/analytics/google-tag-manager.html" . }}
 
+    {{ if eq .Type "notice" }}  <!-- notice 페이지 타입일 때 -->
+    <link rel="stylesheet" href="/css/notice.css">  <!-- notice.css 파일 추가 -->
+    {{end}}
+
 </body>
 </html>

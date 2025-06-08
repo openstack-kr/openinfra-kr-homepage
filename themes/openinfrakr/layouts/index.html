@@ -40,15 +40,15 @@
         {{ end }}
     {{ end }}
     
-    {{ if .Params.intro.enabled }}
+    {{ if .Params.intro_1.enabled }}
         <div class="section section-base-bg-2">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        {{ partial "framework/sections/info/info.html" (dict "context" $ "info" .Params.intro) }}
+                        {{ partial "framework/sections/info/info.html" (dict "context" $ "info" .Params.intro_1) }}
                     </div>
                 </div>
-                {{ if .Params.intro.partners.enabled }}
+                {{ if .Params.intro_1.partners.enabled }}
                 {{ $partners := .Site.Data.partners }}
                     {{ if gt (len $partners) 0}}
                         <div class="row justify-content-center align-items-center pt-3 pt-md-6">
@@ -63,6 +63,22 @@
             </div>
         </div>
     {{ end }}
+
+	<div class="events-container">
+	  {{ range .Params.events }}
+		<div class="event-box">
+		  {{ if .status }}
+			<span class="event-badge {{ .status | lower }}">{{ .status }}</span>
+		  {{ end }}
+		  <h3>{{ .title }}</h3>
+		  <ul>
+			<li><strong>장소:</strong> {{ .location }}</li>
+			<li><strong>일시:</strong> {{ .date }}</li>
+			<li><strong>회비:</strong> {{ .fee }}</li>
+		  </ul>
+		</div>
+	  {{ end }}
+	</div>
 
     {{ if .Params.work.enabled }}
         {{ $section := $.Site.GetPage "section" "work" }}
@@ -100,6 +116,20 @@
             </div>
         </div>
     {{ end }}
+
+    <!-- X Embedded Timeline -->
+    <div class="x-timeline-container" style="display: flex; justify-content: space-between; gap: 20px;">
+
+      <!-- 첫 번째 트윗 박스 -->
+      <div class="x-tweet-box">
+        <a class="twitter-timeline" href="https://twitter.com/OpenStack?ref_src=twsrc%5Etfw">Tweets by OpenStack</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+
+      <!-- 두 번째 트윗 박스 -->
+      <div class="x-tweet-box">
+      </div>
+
+    </div>
 
     {{ if .Params.blog.enabled }}
         {{ $section := $.Site.GetPage "section" "posts" }}
