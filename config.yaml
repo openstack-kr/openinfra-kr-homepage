@@ -1,4 +1,4 @@
-baseURL: https://openstack-kr.github.io/openinfra-kr-homepage
+baseURL: https://openstack-kr.github.io/openinfra-kr-homepage/
 languageCode: ko-kr
 title: OpenInfra Korea User Group
 theme: "openinfrakr"
