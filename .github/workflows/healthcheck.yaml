@@ -1,0 +1,49 @@
+name: Health Check
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install yq
+        run: |
+          sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
+          sudo chmod +x /usr/bin/yq
+
+      - name: Read URLs and Check Health
+        id: healthcheck
+        run: |
+          FAIL_LIST=""
+          for url in $(yq '.urls[]' urls.yaml); do
+            echo "Checking $url"
+            code=$(curl -s -o /dev/null -w "%{http_code}" "$url" || echo 000)
+            if [ "$code" -ne 200 ]; then
+              echo "$url is DOWN (status $code)"
+              FAIL_LIST+="$url (HTTP $code)\n"
+            else
+              echo "$url is OK"
+            fi
+          done
+
+          if [ -n "$FAIL_LIST" ]; then
+            echo "fail_list<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$FAIL_LIST" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            echo "FAILED=true" >> $GITHUB_ENV
+          fi
+
+      - name: Send Discord Alert if Any Site Fails
+        if: env.FAILED == 'true'
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "{\"content\":\":x: Health Check Failed!\n\`\`\`\n${{ steps.healthcheck.outputs.fail_list }}\n\`\`\`\"}" \
+               ${{ secrets.DISCORD_WEBHOOK }}
+
