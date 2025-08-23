@@ -46,7 +46,7 @@ services:
   sort_by: "weight" # "date" "weight"
   limit: 3
 
-intro:
+intro_1:
   enabled: true
   align: left
   image: "/images/photos/home/content-6-thumbnail.jpg"
@@ -70,6 +70,27 @@ intro:
       size: large
       outline: false
       style: "primary"
+
+events:
+  - title: "OpenInfra Days Korea 2025 Call for Speakers"
+    location: "양재 AT 센터"
+    date: "2025.06.15 (UTC+GMT +9)"
+    fee: "0 KRW"
+    status: "모집중"
+
+  - title: "OpenInfra Summit Asia 2024"
+    location: "수원 컨벤션 센터"
+    date: "2024.09.03 09:30 (UTC+GMT +9)"
+    fee: "70,000 KRW"
+    status: "마감"
+
+  - title: "OpenInfra Community Days Korea 2023"
+    location: "서울 코엑스 그랜드 볼룸 (Seoul, COEX Grandballroom)"
+    date: "2023.07.03 10:00 (UTC+GMT +9)"
+    fee: "0 KRW"
+    status: "마감"
+
+
 
 partners:
   enabled: false
@@ -100,8 +121,7 @@ outro:
   buttons:
     - button:
       text: "시작하기"
-      url: "/"
-      #url: "/contact"
+      url: "https://discord.com/invite/vCM6Qj8uKB"
       external: false
       size: "large"
 
@@ -114,4 +134,5 @@ posts:
   sort: "weight" # 'date'
   view_more_button_text: "View All Posts"
   view_more_button_link: "/blog"
+
 ---

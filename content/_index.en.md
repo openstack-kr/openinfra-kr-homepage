@@ -22,17 +22,17 @@ hero:
   fullscreen_mobile: true
   fullscreen_desktop: true
   headings:
-    heading: "OpenInfra Korea Group"
-    sub_heading: "OpenInfra Korea Group is home of all open infra community including OpenStack"
+    heading: "OpenInfra Korea User Group"
+    sub_heading: "The OpenStack Korea community is evolving into a community for all open infrastructure projects!"
     text: ''
     text_color: "#FFFFFF"
     text_color_dark: "#FFFFFF"
   background:
     background_image: "/images/photos/home/home-1-large.jpg"
-    background_image_blend_mode: "overlay" # "overlay", "multiply", "screen"
+    background_image_blend_mode: "overlay"
     background_gradient: true
     background_color: "#1d2830"
-    background_color_dark: "" # "#030202" 
+    background_color_dark: ""
     opacity: 1
   image:
     image: false
@@ -43,27 +43,27 @@ hero:
 services:
   enabled: false
   show_view_all: true
-  sort_by: "weight" # "date" "weight"
+  sort_by: "weight"
   limit: 3
 
-intro:
+intro_1:
   enabled: true
   align: left
   image: "/images/photos/home/content-6-thumbnail.jpg"
-  heading: "Building the next decade of open infrastructure including OpenStack."
+  heading: "A community for open discussions on all open infrastructure topics, including OpenStack."
   description: ""
   bullets:
-    - text: "Hosts regular OpenInfra seminar for engineers and developers in Korea."
+    - text: "Regular seminars for engineers and developers in Korea"
       fa_icon: "fas fa-check"
-    - text: "Help users to study OpenInfra projects."
+    - text: "Support for studying open infrastructure projects"
       fa_icon: "fas fa-check"
-    - text: "Make people to contribute OpenInfra projects with upstream training."
+    - text: "Upstream training to encourage participation, contribution, and expansion in open infrastructure projects"
       fa_icon: "fas fa-check"
-    - text: "Holds OpenInfra Community Days Korea event annually with other communities."
+    - text: "Annual OpenInfra Community Day events with related communities"
       fa_icon: "fas fa-check"
   buttons:
     - button:
-      text: "About Us"
+      text: "About the Community"
       url: "/about"
       external: false
       fa_icon: ""
@@ -71,10 +71,30 @@ intro:
       outline: false
       style: "primary"
 
+events:
+  - title: "OpenInfra Days Korea 2025 Call for Speakers"
+    location: "Yangjae AT Center"
+    date: "2025.06.15 (UTC+GMT +9)"
+    fee: "0 KRW"
+    status: "Open"
+
+  - title: "OpenInfra Summit Asia 2024"
+    location: "Suwon Convention Center"
+    date: "2024.09.03 09:30 (UTC+GMT +9)"
+    fee: "70,000 KRW"
+    status: "Closed"
+
+  - title: "OpenInfra Community Days Korea 2023"
+    location: "Seoul COEX Grand Ballroom"
+    date: "2023.07.03 10:00 (UTC+GMT +9)"
+    fee: "0 KRW"
+    status: "Closed"
+
+
 partners:
   enabled: false
   limit: 5
-  sort: "weight" # 'date'
+  sort: "weight"
 
 projects:
   enabled: false
@@ -82,16 +102,15 @@ projects:
   description: ""
   limit: 2
   columns: 2
-  sort: "weight" # 'date'
+  sort: "weight"
   view_more_button_text: "View All Projects"
   view_more_button_link: "/projects"
 
 outro:
   enabled: true
   align: center
-  #image: false
-  heading: Get Started Today
-  description: "Get your own open infra and OpenStack today"
+  heading: "Join the Community Now"
+  description: "Create your own Open Infrastructure and OpenStack experience"
   features:
     enabled: false
     list:
@@ -101,7 +120,6 @@ outro:
     - button:
       text: "Get Started"
       url: "/"
-      #url: "/contact"
       external: false
       size: "large"
 
@@ -111,7 +129,8 @@ posts:
   description: ""
   limit: 3
   columns: 3
-  sort: "weight" # 'date'
+  sort: "weight"
   view_more_button_text: "View All Posts"
   view_more_button_link: "/blog"
 ---
+

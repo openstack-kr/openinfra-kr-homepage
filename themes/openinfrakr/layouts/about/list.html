@@ -23,15 +23,15 @@
     </div>
   {{ end }}
 
-  {{ if .Params.intro.enabled }}
+  {{ if .Params.intro_1.enabled }}
   <div class="section section-base-bg-2">
       <div class="container">
           <div class="row">
               <div class="col-12">
-                  {{ partial "framework/sections/info/info.html" (dict "context" $ "info" .Params.intro) }}
+                  {{ partial "framework/sections/info/info.html" (dict "context" $ "info" .Params.intro_1) }}
               </div>
           </div>
-          {{ if .Params.intro.partners.enabled }}
+          {{ if .Params.intro_1.partners.enabled }}
           {{ $partners := .Site.Data.partners }}
               {{ if gt (len $partners) 0}}
                   <div class="row justify-content-center align-items-center pt-3 pt-md-6">
@@ -46,6 +46,63 @@
       </div>
   </div>
   {{ end }}
+
+  {{ if .Params.intro_2.enabled }}
+  <div class="section section-base-bg-2">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  {{ partial "framework/sections/info/info.html" (dict "context" $ "info" .Params.intro_2) }}
+              </div>
+          </div>
+          {{ if .Params.intro_2.partners.enabled }}
+          {{ $partners := .Site.Data.partners }}
+              {{ if gt (len $partners) 0}}
+                  <div class="row justify-content-center align-items-center pt-3 pt-md-6">
+                      {{ range .Site.Data.partners }}
+                          <div class="col-4 col-lg-2 text-center mb-1 mt-1">
+                              <img style="max-width: 100px;" height="50px" src="{{ .image | relURL }}" alt="{{ .title }}"/>
+                          </div>
+                      {{ end }}
+                  </div>
+              {{ end }}
+          {{ end }}
+      </div>
+  </div>
+  {{ end }}
+
+  {{ if .Params.intro_3 }}
+    <div class="intro-section">
+	  <div class="intro-box">
+		<h3>{{ .Params.intro_3.heading }}</h3>
+		
+		<div class="intro-images">
+		  <div class="image-container">
+			<img src="{{ .Params.intro_3.image_left | absURL }}" alt="Image Left" class="intro-image">
+		  </div>
+		  <div class="image-container">
+			<img src="{{ .Params.intro_3.image_right | absURL }}" alt="Image Right" class="intro-image">
+		  </div>
+		</div>
+	  </div>
+    </div>
+  {{ end }}
+
+
+	<div class="container">
+	  <div class="members">
+		{{ range .Params.members }}
+		  <div class="member">
+			<img src="{{ .image | absURL }}" alt="{{ .name }}" class="member-image">
+			<div class="member-info">
+			  <h3>{{ .name }}</h3>
+			  <p class="position">{{ .position }}</p>
+			  <p class="description">{{ .description }}</p>
+			</div>
+		  </div>
+		{{ end }}
+	  </div>
+	</div>
 
 
   {{ if .Content }}
