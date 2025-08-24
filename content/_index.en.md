@@ -76,7 +76,7 @@ events:
     location: "Yangjae AT Center"
     date: "2025.06.15 (UTC+GMT +9)"
     fee: "0 KRW"
-    status: "Open"
+    status: "Closed"
 
   - title: "OpenInfra Summit Asia 2024"
     location: "Suwon Convention Center"

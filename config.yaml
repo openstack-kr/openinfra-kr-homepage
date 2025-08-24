@@ -22,7 +22,7 @@ params:
       logo: "/images/sponsors/nhn/dooray.png"
 
     - name: "OpenSource"
-      url: "https://nhn.com/"
+      url: "https://osci.kr/"
       logo: "/images/sponsors/opensource/logo.png"
   colors:
     base_bg: '#ffffff'
