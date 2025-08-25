@@ -135,10 +135,10 @@ body {
 
 .event-box {
     position: relative;  /* 뱃지를 절대 위치로 넣기 위해 필요 */
-    background: linear-gradient(145deg, #f2f2f2, #ffffff);
-    border: 0.5px solid #ddd;
+    background: var(--color-base-bg);
+    border: 0.5px solid var(--color-base-bg-2);
     border-radius: 15px;
-    padding: 25px;
+    padding: 45px 25px 25px 25px;  /* 상단 패딩을 더 늘려서 뱃지 공간 확보 */
     width: calc(50% - 20px);
     min-width: 300px;
     box-sizing: border-box;
@@ -149,6 +149,7 @@ body {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    color: var(--color-base-text);
 }
 
 /* 첫 번째 박스는 전체 너비 */
@@ -165,20 +166,22 @@ body {
 .event-box:hover {
     transform: translateY(-8px);  /* 부드럽게 위로 올라가게 */
     box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.2);  /* 더 두꺼운 그림자 */
-    background-color: #e6e6e6;  /* 호버 시 배경 색 변경 */
+    background-color: var(--color-base-bg-2);  /* 호버 시 배경 색 변경 */
 }
 
 /* 상태 뱃지 스타일 */
 .event-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    padding: 5px 10px;
+    top: 10px;
+    left: 10px;
+    padding: 8px 12px;
     font-size: 0.75rem;
     font-weight: bold;
     color: white;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;  /* 다른 요소들보다 위에 표시 */
+    white-space: nowrap;  /* 텍스트 줄바꿈 방지 */
 }
 
 /* 상태별 색상 */
@@ -206,7 +209,7 @@ body {
 h3 {
     font-size: 1.4em;  /* 타이틀 크기 조정 */
     font-weight: bold;  /* 타이틀 두껍게 */
-    //color: #333;  /* 어두운 텍스트 */
+    color: var(--color-base-text);  /* 다크모드 대응 텍스트 색상 */
     margin-bottom: 15px;  /* 아래쪽 여백 */
 }
 
@@ -214,11 +217,12 @@ ul {
     list-style: none;
     padding: 0;
     font-size: 0.95em;  /* 리스트 항목 크기 조정 */
-    //color: #555;  /* 글자 색 약간 연한 회색 */
+    color: var(--color-base-text-2);  /* 다크모드 대응 글자 색 */
 }
 
 li {
     margin: 8px 0;  /* 항목 간의 간격 */
+    color: var(--color-base-text-2);  /* 다크모드 대응 글자 색 */
 }
 
 .event-box:nth-child(1) {
@@ -346,7 +350,8 @@ li {
 
 .intro-box {
   width: 48%;  /* 2개 이미지를 48% 크기로 설정 */
-  background: #f8f8f8;
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-bg-2);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -354,6 +359,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  h3 {
+    color: var(--color-base-text);
+    margin-bottom: 15px;
+  }
 }
 
 .intro-images {
@@ -401,8 +411,8 @@ li {
 }
 
 .member {
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-bg-2);
   border-radius: 10px;
   padding: 15px;
   width: 30%;
@@ -417,26 +427,33 @@ li {
   }
 
   .member-image {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    max-width: 100px;
+    object-fit: cover;
+    object-position: center;
     margin: 0 auto;
+    display: block;
   }
 
   .member-info {
     margin-top: 15px;
+    
+    h3 {
+      color: var(--color-base-text);
+      margin-bottom: 10px;
+    }
   }
 
   .position {
     font-size: 1.1em;
-    color: #555;
+    color: var(--color-base-text-2);
     margin: 10px 0;
   }
 
   .description {
     font-size: 1em;
-    color: #777;
+    color: var(--color-base-text-2);
     margin: 10px 0;
   }
 }

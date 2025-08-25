@@ -128,7 +128,7 @@ params:
   bottom:
     enabled: true
     enable_bottom_menu: true
-    copyright_text: © 2025 OpenInfra Korea Group All Rights Reserved
+    copyright_text: © 2025 OpenInfra Korea Group · Powered by NHN Cloud
     show_rss_icon: false
 languages:
   en:
@@ -225,13 +225,7 @@ languages:
           params:
             external: true
             button: true
-      bottom:
-        - name: Terms
-          url: terms
-          weight: 1
-        - name: Privacy
-          url: privacy
-          weight: 2
+      bottom: []
 
   ko:
     weight: 0
@@ -342,13 +336,7 @@ languages:
           params:
             external: true
             button: true
-      bottom:
-        - name: Terms
-          url: terms
-          weight: 1
-        - name: Privacy
-          url: privacy
-          weight: 2
+      bottom: []
 permalinks:
   posts: blog/:year/:month/:title/
   pages: :slug/
