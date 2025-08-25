@@ -1,9 +1,9 @@
 ---
 title: "OpenInfra Seminar 2025 5월 발표자 모집 안내"
 date: "2025-05-22"
-description: "OpenInfra 한국 사용자 모임 5월 세미나 발표자를 모십니다. 오픈 인프라 관련 주제로 발표를 원하시는 분들의 많은 참여 바랍니다."
-categories: ["이벤트", "공고"]
-tags: ["OpenInfra Seminar", "컨퍼런스", "발표자모집"]
+summary: "OpenInfra 한국 사용자 모임 5월 세미나 발표자를 모십니다. 오픈 인프라 관련 주제로 발표를 원하시는 분들의 많은 참여 바랍니다."
+category: ["events", "recruit"]
+author: "OpenInfra Korea 운영진"
 draft: false
 ---
 
@@ -21,5 +21,3 @@ OpenInfra Days Korea 2024 컨퍼런스의 발표자를 모집합니다. 오픈 �
 2. 제안서 제출 (웹사이트 통해 제출)
 3. 심사 및 선정 과정
 4. 최종 발표자 선정
-
-자세한 내용은 [자세히 보기 >](#) 를 클릭하여 확인해주세요. 
