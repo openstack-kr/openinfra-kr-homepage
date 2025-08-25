@@ -76,7 +76,7 @@ events:
     location: "양재 AT 센터"
     date: "2025.06.15 (UTC+GMT +9)"
     fee: "0 KRW"
-    status: "모집중"
+    status: "마감"
 
   - title: "OpenInfra Summit Asia 2024"
     location: "수원 컨벤션 센터"

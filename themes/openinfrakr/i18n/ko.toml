@@ -1,21 +1,16 @@
-[view_all]
-    other = "View All"
-[all_rights_reserved]
-    other = "All Rights Reserved"
-
 ### Category items on the Notice Page ###
 ### directory : notice, themes/openinfrakr/notice/list.html ###
 [categories.all]
-other = "All Categories"
+other = "전체 카테고리"
 [categories.events]
-other = "Events"
+other = "행사 안내"
 [categories.meetup]
-other = "Meetup"
+other = "밋업"
 [categories.project]
-other = "Project"
+other = "프로젝트"
 [categories.recruit]
-other = "Recruitment Info"
+other = "모집 안내"
 [categories.membership]
-other = "Membership"
+other = "멤버십"
 [categories.education]
-other = "Education"
+other = "교육"
