@@ -74,7 +74,7 @@ intro_1:
 events:
   - title: "KCD x Ceph x OpenInfra Day Korea 2026"
     location: "서울 용산구 백범김구기념관"
-    date: "2025.09.01 (UTC+GMT +9)"
+    date: "2026.09.01 (UTC+GMT +9)"
     fee: "스탠다드: 70,000원"
     status: "등록중"
 

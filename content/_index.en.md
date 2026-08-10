@@ -74,7 +74,7 @@ intro_1:
 events:
   - title: "KCD x Ceph x OpenInfra Day Korea 2026"
     location: "Kim Koo Museum & Library"
-    date: "2025.09.01 (UTC+GMT +9)"
+    date: "2026.09.01 (UTC+GMT +9)"
     fee: "Standard: 70,000 KRW"
     status: "Open"
 
