@@ -46,53 +46,54 @@ intro_3:
   heading: "OpenStack Korea User Group"
 
 members:
-  - name: "Sungsoo Cho"
-    position: "President"
-    image: "/images/members/ppiyakk2.png"
-    description: "I'm Sungsoo Cho, someone who lives the dream of turning a passion for OpenStack into a career."
-
-  - name: "Kwanyoung Kim (Jeff Gy Kim)"
-    position: "Organizer"
-    image: "/images/members/gykim21.png"
-    description: "I'm Kwanyoung Kim (Jeff Gy Kim), passionate about continuous growth, change, and collaborative open-source activities."
-
   - name: "Hocheol Shin"
-    position: "Organizer"
+    position: "President"
     image: "/images/members/shingoon7.png"
     description: "I'm Hocheol Shin, actively working to promote the adoption of Open Infrastructure."
-
-  - name: "Yoonsu Lim"
-    position: "Organizer"
-    image: "/images/members/msdbtjd123.png"
-    description: "I mainly work with OpenStack and Kubernetes. In the community, I contribute to infrastructure management and OpenStack development."
-
-  - name: "Jaeseong Shin"
-    position: "Organizer"
-    image: "/images/members/rornfl916.png"
-    description: "I'm Jaeseong Shin, passionate about Open Infrastructure and community involvement."
-
-  - name: "Soonjae Kwon"
-    position: "Organizer"
-    image: "/images/members/ksun4131.png"
-    description: "Hello! I'm Soonjae Kwon, an active member contributing to technical exchanges and organizing seminars."
 
   - name: "Beomseok Kim"
     position: "Organizer"
     image: "/images/members/xfrnk2.png"
     description: "I love cloud computing and open source. I enjoy sharing knowledge and growing through community contributions and outreach."
 
-  - name: "Kyunghwa Yoon"
+  - name: "Geumyoung Lee"
     position: "Organizer"
-    image: "/images/members/juju97.png"
-    description: "I'm Kyunghwa Yoon, a technical writer connecting cloud and documentation, and a fan of OpenStack."
+    image: "/images/members/gyu04170.png"
+    description: "I'm Geumyoung Lee, learning OpenStack and helping more people engage with and make use of it through community activities."
 
   - name: "Jaekeun Lee"
     position: "Organizer"
     image: "/images/members/wlrmworms.png"
     description: "I'm Jaekeun Lee, enjoying life alongside OpenStack!"
 
-  - name: "Geumyoung Lee"
+  - name: "Jaeseong Shin"
     position: "Organizer"
-    image: "/images/members/gyu04170.png"
-    description: "I'm Geumyoung Lee, learning OpenStack and helping more people engage with and make use of it through community activities."
+    image: "/images/members/rornfl916.png"
+    description: "I'm Jaeseong Shin, passionate about Open Infrastructure and community involvement."
+
+  - name: "Jihoon Shin"
+    position: "Organizer"
+    image: "/images/members/developowl.png"
+    description: "-"
+
+  - name: "Kyunghwa Yoon"
+    position: "Organizer"
+    image: "/images/members/juju97.png"
+    description: "I'm Kyunghwa Yoon, a technical writer connecting cloud and documentation, and a fan of OpenStack."
+
+  - name: "Soonjae Kwon"
+    position: "Organizer"
+    image: "/images/members/ksun4131.png"
+    description: "Hello! I'm Soonjae Kwon, an active member contributing to technical exchanges and organizing seminars."
+
+  - name: "Sungsoo Cho"
+    position: "Organizer"
+    image: "/images/members/ppiyakk2.png"
+    description: "I'm Sungsoo Cho, someone who lives the dream of turning a passion for OpenStack into a career."
+
+  - name: "Yoonsu Lim"
+    position: "Organizer"
+    image: "/images/members/msdbtjd123.png"
+    description: "I mainly work with OpenStack and Kubernetes. In the community, I contribute to infrastructure management and OpenStack development."
+
 ---
