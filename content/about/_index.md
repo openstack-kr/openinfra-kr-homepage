@@ -68,7 +68,7 @@ members:
   - name: "신지훈"
     position: "운영진"
     image: "/images/members/developowl.png"
-    description: "-"
+    description: "안녕하세요! 오픈스택을 비롯한 클라우드 생태계를 공부하고 있는 신지훈 입니다. 오픈소스와 커뮤니티 활동을 좋아합니다. 잘 부탁드립니다. :D"
   - name: "윤경화"
     position: "운영진"
     image: "/images/members/juju97.png"
