@@ -72,22 +72,28 @@ intro_1:
       style: "primary"
 
 events:
-  - title: "OpenInfra Days Korea 2025 Call for Speakers"
+  - title: "KCD x Ceph x OpenInfra Day Korea 2026"
+    location: "Kim Koo Museum & Library"
+    date: "2025.09.01 (UTC+GMT +9)"
+    fee: "Standard: 70,000 KRW"
+    status: "Open"
+
+  - title: "OpenInfra Days Korea 2025"
     location: "Yangjae AT Center"
     date: "2025.06.15 (UTC+GMT +9)"
-    fee: "0 KRW"
+    fee: "(Completed)"
     status: "Closed"
 
   - title: "OpenInfra Summit Asia 2024"
     location: "Suwon Convention Center"
     date: "2024.09.03 09:30 (UTC+GMT +9)"
-    fee: "70,000 KRW"
+    fee: "(Completed)"
     status: "Closed"
 
   - title: "OpenInfra Community Days Korea 2023"
     location: "Seoul COEX Grand Ballroom"
     date: "2023.07.03 10:00 (UTC+GMT +9)"
-    fee: "0 KRW"
+    fee: "(Completed)"
     status: "Closed"
 
 

@@ -72,22 +72,28 @@ intro_1:
       style: "primary"
 
 events:
-  - title: "OpenInfra Days Korea 2025 Call for Speakers"
+  - title: "KCD x Ceph x OpenInfra Day Korea 2026"
+    location: "서울 용산구 백범김구기념관"
+    date: "2025.09.01 (UTC+GMT +9)"
+    fee: "스탠다드: 70,000원"
+    status: "등록중"
+
+  - title: "OpenInfra Days Korea 2025"
     location: "양재 AT 센터"
     date: "2025.06.15 (UTC+GMT +9)"
-    fee: "0 KRW"
+    fee: "(Completed)"
     status: "마감"
 
   - title: "OpenInfra Summit Asia 2024"
     location: "수원 컨벤션 센터"
     date: "2024.09.03 09:30 (UTC+GMT +9)"
-    fee: "70,000 KRW"
+    fee: "(Completed)"
     status: "마감"
 
   - title: "OpenInfra Community Days Korea 2023"
     location: "서울 코엑스 그랜드 볼룸 (Seoul, COEX Grandballroom)"
     date: "2023.07.03 10:00 (UTC+GMT +9)"
-    fee: "0 KRW"
+    fee: "(Completed)"
     status: "마감"
 
 

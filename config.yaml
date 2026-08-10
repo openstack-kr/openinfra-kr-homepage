@@ -184,6 +184,13 @@ languages:
           weight: 41
           params:
             external: true
+        - identifier: meetup
+          parent: community-group
+          name: Meetup
+          url: https://www.meetup.com/openstack-and-open-infrastructure-korea
+          weight: 41
+          params:
+            external: true
         #- identifier: hall-of-fame-group
         #  name: Hall of Fame
         #  weight: 7
@@ -221,6 +228,12 @@ languages:
             button: true
         - name: Mailing
           url: https://lists.openstack.org/mailman3/lists/openstack-ko.lists.openstack.org/
+          weight: 4
+          params:
+            external: true
+            button: true
+        - name: Meetup
+          url: https://www.meetup.com/openstack-and-open-infrastructure-korea
           weight: 4
           params:
             external: true
@@ -295,6 +308,13 @@ languages:
           weight: 41
           params:
             external: true
+        - identifier: meetup
+          parent: community-group
+          name: Meetup
+          url: https://www.meetup.com/openstack-and-open-infrastructure-korea
+          weight: 41
+          params:
+            external: true
         #- identifier: hall-of-fame-group
         #  name: 명예의 전당
         #  weight: 7
@@ -332,6 +352,12 @@ languages:
             button: true
         - name: Mailing
           url: https://lists.openstack.org/mailman3/lists/openstack-ko.lists.openstack.org/
+          weight: 4
+          params:
+            external: true
+            button: true
+        - name: Meetup
+          url: https://www.meetup.com/openstack-and-open-infrastructure-korea
           weight: 4
           params:
             external: true
