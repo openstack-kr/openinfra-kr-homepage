@@ -74,7 +74,7 @@ members:
   - name: "Jihoon Shin"
     position: "Organizer"
     image: "/images/members/developowl.png"
-    description: "-"
+    description: "Hi! I am Jihoon Shin, and I am currently studying the cloud ecosystem, including OpenStack. I enjoy open source projects and community activities. I look forward to connecting with you all. :D"
 
   - name: "Kyunghwa Yoon"
     position: "Organizer"
